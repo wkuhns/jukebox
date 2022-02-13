@@ -1,0 +1,4254 @@
+Track Count: 26
+Have MBZ disc
+1: Artist: Various Artists Title: Motown 1’s Status: Official  Country: US  Date: 2004-04-20 
+2: Artist: Various Artists Title: Motown Number 1’s Status: Official  Country: XE  Date: 2007 
+3: Artist: Various Artists Title: Motown 1’s Status: Official 
+Select release: b6accdab-67bf-4258-9ae5-cbbc310a8995
+{
+  "release": {
+    "artist-credit": [
+      {
+        "artist": {
+          "disambiguation": "add compilations to this artist",
+          "id": "89ad4ac3-39f7-470e-963a-56509c546377",
+          "name": "Various Artists",
+          "sort-name": "Various Artists",
+          "type": "Other"
+        }
+      }
+    ],
+    "artist-credit-phrase": "Various Artists",
+    "asin": "B0001XARA4",
+    "barcode": "602498614723",
+    "country": "US",
+    "cover-art-archive": {
+      "artwork": "true",
+      "back": "false",
+      "count": "1",
+      "front": "true"
+    },
+    "date": "2004-04-20",
+    "id": "b6accdab-67bf-4258-9ae5-cbbc310a8995",
+    "medium-count": 1,
+    "medium-list": [
+      {
+        "format": "CD",
+        "position": "1",
+        "track-count": 26,
+        "track-list": [
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "Special Purpose Artist - Do not add releases here, if possible.",
+                  "id": "125ec42a-7229-4250-afc5-e057484327fe",
+                  "name": "[unknown]",
+                  "sort-name": "[unknown]",
+                  "tag-list": [
+                    {
+                      "count": "-2",
+                      "name": "1 10 188043 183 17153 34783 54830 72970 97673 116825 128263 157073 171433"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "bogus"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "bogus artist"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "british"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "classical"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "cleanup"
+                    },
+                    {
+                      "count": "0",
+                      "name": "composer"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "cotm"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "don't rate the [unknown] artist"
+                    },
+                    {
+                      "count": "0",
+                      "name": "dumping ground"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "easy listening soundtracks and musicals"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "fix"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "fix tags"
+                    },
+                    {
+                      "count": "-3",
+                      "name": "fixme"
+                    },
+                    {
+                      "count": "2",
+                      "name": "fixme or cleanup"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "fixme-probably not a real artist"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "has german audiobooks"
+                    },
+                    {
+                      "count": "0",
+                      "name": "johny johny yes papa"
+                    },
+                    {
+                      "count": "0",
+                      "name": "kids hut"
+                    },
+                    {
+                      "count": "0",
+                      "name": "kids songs"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "lazy asses"
+                    },
+                    {
+                      "count": "-3",
+                      "name": "merge"
+                    },
+                    {
+                      "count": "0",
+                      "name": "merge me"
+                    },
+                    {
+                      "count": "1",
+                      "name": "meta artist"
+                    },
+                    {
+                      "count": "0",
+                      "name": "nursery rhymes"
+                    },
+                    {
+                      "count": "0",
+                      "name": "nursery rhymes collection"
+                    },
+                    {
+                      "count": "0",
+                      "name": "nursery rhymes playlist"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "pop and chart"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "relaxation"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rhymes"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "software company as artist"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "soundtrack"
+                    },
+                    {
+                      "count": "2",
+                      "name": "spamess"
+                    },
+                    {
+                      "count": "11",
+                      "name": "special purpose artist"
+                    },
+                    {
+                      "count": "-3",
+                      "name": "stop merging crap so my tags get fucked up"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "traditional"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "uk"
+                    },
+                    {
+                      "count": "0",
+                      "name": "unknown"
+                    },
+                    {
+                      "count": "0",
+                      "name": "wheels on the bus"
+                    }
+                  ],
+                  "type": "Other"
+                }
+              }
+            ],
+            "artist-credit-phrase": "[unknown]",
+            "id": "427ad5b6-eb3e-35d0-8164-cfc12bfc8800",
+            "length": "4066",
+            "number": "1",
+            "position": "1",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "Special Purpose Artist - Do not add releases here, if possible.",
+                    "id": "125ec42a-7229-4250-afc5-e057484327fe",
+                    "name": "[unknown]",
+                    "sort-name": "[unknown]",
+                    "tag-list": [
+                      {
+                        "count": "-2",
+                        "name": "1 10 188043 183 17153 34783 54830 72970 97673 116825 128263 157073 171433"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "bogus"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "bogus artist"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "british"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "classical"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "cleanup"
+                      },
+                      {
+                        "count": "0",
+                        "name": "composer"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "cotm"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "don't rate the [unknown] artist"
+                      },
+                      {
+                        "count": "0",
+                        "name": "dumping ground"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "easy listening soundtracks and musicals"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "fix"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "fix tags"
+                      },
+                      {
+                        "count": "-3",
+                        "name": "fixme"
+                      },
+                      {
+                        "count": "2",
+                        "name": "fixme or cleanup"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "fixme-probably not a real artist"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "has german audiobooks"
+                      },
+                      {
+                        "count": "0",
+                        "name": "johny johny yes papa"
+                      },
+                      {
+                        "count": "0",
+                        "name": "kids hut"
+                      },
+                      {
+                        "count": "0",
+                        "name": "kids songs"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "lazy asses"
+                      },
+                      {
+                        "count": "-3",
+                        "name": "merge"
+                      },
+                      {
+                        "count": "0",
+                        "name": "merge me"
+                      },
+                      {
+                        "count": "1",
+                        "name": "meta artist"
+                      },
+                      {
+                        "count": "0",
+                        "name": "nursery rhymes"
+                      },
+                      {
+                        "count": "0",
+                        "name": "nursery rhymes collection"
+                      },
+                      {
+                        "count": "0",
+                        "name": "nursery rhymes playlist"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "pop and chart"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "relaxation"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rhymes"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "software company as artist"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "soundtrack"
+                      },
+                      {
+                        "count": "2",
+                        "name": "spamess"
+                      },
+                      {
+                        "count": "11",
+                        "name": "special purpose artist"
+                      },
+                      {
+                        "count": "-3",
+                        "name": "stop merging crap so my tags get fucked up"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "traditional"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "uk"
+                      },
+                      {
+                        "count": "0",
+                        "name": "unknown"
+                      },
+                      {
+                        "count": "0",
+                        "name": "wheels on the bus"
+                      }
+                    ],
+                    "type": "Other"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "[unknown]",
+              "id": "8f9e9d6f-a535-4f72-8d8e-106e1ae80e09",
+              "length": "4066",
+              "title": "Intro"
+            },
+            "track_or_recording_length": "4066"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "faca5707-ce1a-4276-a5bc-a4061bfb33d2",
+                  "name": "The Marvelettes",
+                  "sort-name": "Marvelettes, The",
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "The Marvelettes",
+            "id": "cd83019a-3ca5-3044-b89d-08b2ec6f1133",
+            "length": "149986",
+            "number": "2",
+            "position": "2",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "faca5707-ce1a-4276-a5bc-a4061bfb33d2",
+                    "name": "The Marvelettes",
+                    "sort-name": "Marvelettes, The",
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "The Marvelettes",
+              "id": "aad83213-1c4b-4bd3-a2a7-ecf2b68d4a26",
+              "length": "149173",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "girl group"
+                },
+                {
+                  "count": "1",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "0",
+                  "name": "r&b"
+                },
+                {
+                  "count": "0",
+                  "name": "rock roll"
+                },
+                {
+                  "count": "1",
+                  "name": "soul"
+                }
+              ],
+              "title": "Please Mr. Postman"
+            },
+            "track_or_recording_length": "149986"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "9d1bc10a-24fe-4b41-8338-ea92d8101a09",
+                  "name": "Martha Reeves and the Vandellas",
+                  "sort-name": "Reeves, Martha and the Vandellas",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "fixme ngs?"
+                    },
+                    {
+                      "count": "1",
+                      "name": "girl group"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "1",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Group"
+                },
+                "name": "Martha and the Vandellas"
+              }
+            ],
+            "artist-credit-phrase": "Martha and the Vandellas",
+            "id": "ec6237e5-2f2f-378e-b2d4-ea84ac7716c2",
+            "length": "164333",
+            "number": "3",
+            "position": "3",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "9d1bc10a-24fe-4b41-8338-ea92d8101a09",
+                    "name": "Martha Reeves and the Vandellas",
+                    "sort-name": "Reeves, Martha and the Vandellas",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "fixme ngs?"
+                      },
+                      {
+                        "count": "1",
+                        "name": "girl group"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "1",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Group"
+                  },
+                  "name": "Martha and the Vandellas"
+                }
+              ],
+              "artist-credit-phrase": "Martha and the Vandellas",
+              "id": "19e9945f-d730-4952-978c-6b7beaea1c83",
+              "length": "165840",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "motown"
+                },
+                {
+                  "count": "1",
+                  "name": "pop/rock"
+                },
+                {
+                  "count": "1",
+                  "name": "r b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "rock roll"
+                }
+              ],
+              "title": "(Love Is Like a) Heat Wave"
+            },
+            "track_or_recording_length": "164333"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "43fe7a49-2a63-48f1-871c-12450d21eeb1",
+                  "name": "Mary Wells",
+                  "sort-name": "Wells, Mary",
+                  "tag-list": [
+                    {
+                      "count": "-1",
+                      "name": "death by laryngeal cancer"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "death by pneumonia"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rock and indie"
+                    },
+                    {
+                      "count": "1",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Mary Wells",
+            "id": "9fabdfa6-7c2c-34c6-bcaa-d9e741f38ef3",
+            "length": "172506",
+            "number": "4",
+            "position": "4",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "43fe7a49-2a63-48f1-871c-12450d21eeb1",
+                    "name": "Mary Wells",
+                    "sort-name": "Wells, Mary",
+                    "tag-list": [
+                      {
+                        "count": "-1",
+                        "name": "death by laryngeal cancer"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "death by pneumonia"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rock and indie"
+                      },
+                      {
+                        "count": "1",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Mary Wells",
+              "id": "ddf68e07-a183-4112-bebf-e9e77e71d9d2",
+              "length": "171320",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "ballad"
+                },
+                {
+                  "count": "2",
+                  "name": "classic motown"
+                },
+                {
+                  "count": "1",
+                  "name": "classic rock"
+                },
+                {
+                  "count": "1",
+                  "name": "club"
+                },
+                {
+                  "count": "1",
+                  "name": "country rock"
+                },
+                {
+                  "count": "1",
+                  "name": "doo wop"
+                },
+                {
+                  "count": "1",
+                  "name": "gospel"
+                },
+                {
+                  "count": "1",
+                  "name": "pop"
+                },
+                {
+                  "count": "1",
+                  "name": "pop rock"
+                },
+                {
+                  "count": "2",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "rhythm & blues"
+                },
+                {
+                  "count": "1",
+                  "name": "rock and roll"
+                },
+                {
+                  "count": "1",
+                  "name": "rock roll"
+                },
+                {
+                  "count": "1",
+                  "name": "soul"
+                },
+                {
+                  "count": "1",
+                  "name": "soul; motown; r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "vocal"
+                }
+              ],
+              "title": "My Guy"
+            },
+            "track_or_recording_length": "172506"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "Motown soul vocal group",
+                  "id": "d8df96ae-8fcf-4997-b3e6-e5d1aaf0f69e",
+                  "name": "The Temptations",
+                  "sort-name": "Temptations, The",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "american"
+                    },
+                    {
+                      "count": "1",
+                      "name": "cannot delete wikipedia"
+                    },
+                    {
+                      "count": "2",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "2",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "motown"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "psychedelic soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "r&b"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rnb"
+                    },
+                    {
+                      "count": "1",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "5",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "The Temptations",
+            "id": "a1b45f77-17a4-373d-ae8c-361b0be40361",
+            "length": "176626",
+            "number": "5",
+            "position": "5",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "Motown soul vocal group",
+                    "id": "d8df96ae-8fcf-4997-b3e6-e5d1aaf0f69e",
+                    "name": "The Temptations",
+                    "sort-name": "Temptations, The",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "american"
+                      },
+                      {
+                        "count": "1",
+                        "name": "cannot delete wikipedia"
+                      },
+                      {
+                        "count": "2",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "2",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "motown"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "psychedelic soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "r&b"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rnb"
+                      },
+                      {
+                        "count": "1",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "5",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "The Temptations",
+              "id": "a2e890c2-d341-403f-b875-719c0f24bb41",
+              "length": "165000",
+              "tag-list": [
+                {
+                  "count": "0",
+                  "name": "ballad"
+                },
+                {
+                  "count": "0",
+                  "name": "blues"
+                },
+                {
+                  "count": "1",
+                  "name": "classic motown"
+                },
+                {
+                  "count": "0",
+                  "name": "country rock"
+                },
+                {
+                  "count": "0",
+                  "name": "disco"
+                },
+                {
+                  "count": "0",
+                  "name": "doo wop"
+                },
+                {
+                  "count": "0",
+                  "name": "funk / soul"
+                },
+                {
+                  "count": "0",
+                  "name": "gospel"
+                },
+                {
+                  "count": "0",
+                  "name": "pop"
+                },
+                {
+                  "count": "1",
+                  "name": "pop music"
+                },
+                {
+                  "count": "0",
+                  "name": "pop rock"
+                },
+                {
+                  "count": "1",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "0",
+                  "name": "r b soul"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "0",
+                  "name": "rhythm & blues"
+                },
+                {
+                  "count": "2",
+                  "name": "rock"
+                },
+                {
+                  "count": "0",
+                  "name": "rock & roll"
+                },
+                {
+                  "count": "1",
+                  "name": "rock/pop"
+                },
+                {
+                  "count": "0",
+                  "name": "score"
+                },
+                {
+                  "count": "6",
+                  "name": "soul"
+                },
+                {
+                  "count": "0",
+                  "name": "soundtrack"
+                },
+                {
+                  "count": "0",
+                  "name": "vocal"
+                }
+              ],
+              "title": "My Girl"
+            },
+            "track_or_recording_length": "176626"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "60s/70s Motown singing group",
+                  "id": "c1aa2ec9-53e7-4d90-8d36-bac75832e986",
+                  "name": "The Supremes",
+                  "sort-name": "Supremes, The",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "1",
+                      "name": "girl group"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "psychedelic soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "The Supremes",
+            "id": "f6034126-7f98-3b6f-8197-4377e494cd0f",
+            "length": "161200",
+            "number": "6",
+            "position": "6",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "60s/70s Motown singing group",
+                    "id": "c1aa2ec9-53e7-4d90-8d36-bac75832e986",
+                    "name": "The Supremes",
+                    "sort-name": "Supremes, The",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "1",
+                        "name": "girl group"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "psychedelic soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "The Supremes",
+              "disambiguation": "2003 remix, USMO10300711",
+              "id": "b4ad68ac-3ea5-413b-bedb-9d7980faf063",
+              "length": "160893",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "folk/country"
+                },
+                {
+                  "count": "1",
+                  "name": "soul"
+                }
+              ],
+              "title": "Where Did Our Love Go"
+            },
+            "track_or_recording_length": "161200"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "60s/70s Motown singing group",
+                  "id": "c1aa2ec9-53e7-4d90-8d36-bac75832e986",
+                  "name": "The Supremes",
+                  "sort-name": "Supremes, The",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "1",
+                      "name": "girl group"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "psychedelic soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "The Supremes",
+            "id": "fbe0f7de-dc33-3318-afef-f6e3fcfbcb0c",
+            "length": "179813",
+            "number": "7",
+            "position": "7",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "60s/70s Motown singing group",
+                    "id": "c1aa2ec9-53e7-4d90-8d36-bac75832e986",
+                    "name": "The Supremes",
+                    "sort-name": "Supremes, The",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "1",
+                        "name": "girl group"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "psychedelic soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "The Supremes",
+              "disambiguation": "2003 remix, USMO10300714",
+              "id": "25b1d0d6-9cce-4b71-a765-9203aa53c61d",
+              "length": "179906",
+              "title": "Stop! In the Name of Love"
+            },
+            "track_or_recording_length": "179813"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "07d78001-dde0-489c-9281-d2fa98a85de4",
+                  "name": "Jr. Walker & the All Stars",
+                  "sort-name": "Walker, Jr. & the All Stars",
+                  "tag-list": [
+                    {
+                      "count": "1",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "1",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rock & roll"
+                    },
+                    {
+                      "count": "1",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "soul jazz"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Jr. Walker & the All Stars",
+            "id": "2765c799-e42b-32ff-b7a7-1da695fdd672",
+            "length": "177666",
+            "number": "8",
+            "position": "8",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "07d78001-dde0-489c-9281-d2fa98a85de4",
+                    "name": "Jr. Walker & the All Stars",
+                    "sort-name": "Walker, Jr. & the All Stars",
+                    "tag-list": [
+                      {
+                        "count": "1",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "1",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rock & roll"
+                      },
+                      {
+                        "count": "1",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "soul jazz"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Jr. Walker & the All Stars",
+              "id": "e601616c-b2c2-4e36-944d-9d44a898148c",
+              "length": "182159",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "rock"
+                },
+                {
+                  "count": "1",
+                  "name": "soul"
+                }
+              ],
+              "title": "Shotgun"
+            },
+            "track_or_recording_length": "177666"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "Motown",
+                  "id": "0d21b01f-21f2-419b-8d98-4158ba0c0aa4",
+                  "name": "Four Tops",
+                  "sort-name": "Four Tops",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "2",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "motown"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "2",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "5",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "vocal group"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Four Tops",
+            "id": "20c13183-517c-3646-8f35-073421ee6b42",
+            "length": "165373",
+            "number": "9",
+            "position": "9",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "Motown",
+                    "id": "0d21b01f-21f2-419b-8d98-4158ba0c0aa4",
+                    "name": "Four Tops",
+                    "sort-name": "Four Tops",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "2",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "motown"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "2",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "5",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "vocal group"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Four Tops",
+              "id": "85323b77-8fce-47a1-ab0d-2366c5300115",
+              "length": "164000",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "album rock"
+                },
+                {
+                  "count": "0",
+                  "name": "am pop"
+                },
+                {
+                  "count": "1",
+                  "name": "ambient; electronic; jazz; pop; soul music"
+                },
+                {
+                  "count": "0",
+                  "name": "baroque pop"
+                },
+                {
+                  "count": "0",
+                  "name": "contemporary pop/rock"
+                },
+                {
+                  "count": "0",
+                  "name": "early pop/rock"
+                },
+                {
+                  "count": "0",
+                  "name": "early r&b"
+                },
+                {
+                  "count": "0",
+                  "name": "folk"
+                },
+                {
+                  "count": "0",
+                  "name": "folk-pop"
+                },
+                {
+                  "count": "0",
+                  "name": "folk-rock"
+                },
+                {
+                  "count": "0",
+                  "name": "motown"
+                },
+                {
+                  "count": "0",
+                  "name": "pop"
+                },
+                {
+                  "count": "1",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "0",
+                  "name": "pop-soul"
+                },
+                {
+                  "count": "0",
+                  "name": "pop/rock"
+                },
+                {
+                  "count": "0",
+                  "name": "psychedelic/garage"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "2",
+                  "name": "rhythm & blues"
+                },
+                {
+                  "count": "0",
+                  "name": "rock & roll"
+                },
+                {
+                  "count": "0",
+                  "name": "rock/pop"
+                },
+                {
+                  "count": "0",
+                  "name": "singer/songwriter"
+                },
+                {
+                  "count": "0",
+                  "name": "soft rock"
+                },
+                {
+                  "count": "3",
+                  "name": "soul"
+                },
+                {
+                  "count": "3",
+                  "name": "soundtrack"
+                },
+                {
+                  "count": "0",
+                  "name": "soundtracks"
+                },
+                {
+                  "count": "0",
+                  "name": "stage & screen"
+                }
+              ],
+              "title": "I Can\u2019t Help Myself (Sugar Pie, Honey Bunch)"
+            },
+            "title": "I Can\u2019t Help Myself (Sugar Pie Honey Bunch)",
+            "track_or_recording_length": "165373"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "1ee18fb3-18a6-4c7f-8ba0-bc41cdd0462e",
+                  "name": "Stevie Wonder",
+                  "sort-name": "Wonder, Stevie",
+                  "tag-list": [
+                    {
+                      "count": "1",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "1",
+                      "name": "film soundtrack"
+                    },
+                    {
+                      "count": "1",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "grammy winner"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rock and indie"
+                    },
+                    {
+                      "count": "5",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Stevie Wonder",
+            "id": "579916f1-8cbc-3d30-9228-6988cd2acfcc",
+            "length": "174333",
+            "number": "10",
+            "position": "10",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "1ee18fb3-18a6-4c7f-8ba0-bc41cdd0462e",
+                    "name": "Stevie Wonder",
+                    "sort-name": "Wonder, Stevie",
+                    "tag-list": [
+                      {
+                        "count": "1",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "1",
+                        "name": "film soundtrack"
+                      },
+                      {
+                        "count": "1",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "grammy winner"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rock and indie"
+                      },
+                      {
+                        "count": "5",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Stevie Wonder",
+              "id": "4ec5ecd9-0984-4006-bee4-611501807254",
+              "length": "173920",
+              "tag-list": [
+                {
+                  "count": "0",
+                  "name": "pop"
+                },
+                {
+                  "count": "1",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "2",
+                  "name": "r b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "0",
+                  "name": "rock"
+                },
+                {
+                  "count": "5",
+                  "name": "soul"
+                }
+              ],
+              "title": "Uptight (Everything\u2019s Alright)"
+            },
+            "track_or_recording_length": "174333"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "Motown soul vocal group",
+                  "id": "d8df96ae-8fcf-4997-b3e6-e5d1aaf0f69e",
+                  "name": "The Temptations",
+                  "sort-name": "Temptations, The",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "american"
+                    },
+                    {
+                      "count": "1",
+                      "name": "cannot delete wikipedia"
+                    },
+                    {
+                      "count": "2",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "2",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "motown"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "psychedelic soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "r&b"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rnb"
+                    },
+                    {
+                      "count": "1",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "5",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "The Temptations",
+            "id": "8d2b692a-471a-3f1d-9884-ab1b6091a6ff",
+            "length": "153000",
+            "number": "11",
+            "position": "11",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "Motown soul vocal group",
+                    "id": "d8df96ae-8fcf-4997-b3e6-e5d1aaf0f69e",
+                    "name": "The Temptations",
+                    "sort-name": "Temptations, The",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "american"
+                      },
+                      {
+                        "count": "1",
+                        "name": "cannot delete wikipedia"
+                      },
+                      {
+                        "count": "2",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "2",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "motown"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "psychedelic soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "r&b"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rnb"
+                      },
+                      {
+                        "count": "1",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "5",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "The Temptations",
+              "id": "4f962353-775f-4ffe-b866-6b5ade34cbdf",
+              "length": "153093",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "funk soul"
+                },
+                {
+                  "count": "1",
+                  "name": "r b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "rock"
+                },
+                {
+                  "count": "2",
+                  "name": "soul"
+                },
+                {
+                  "count": "3",
+                  "name": "soul and r b"
+                }
+              ],
+              "title": "Ain\u2019t Too Proud to Beg"
+            },
+            "track_or_recording_length": "153000"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "Motown",
+                  "id": "0d21b01f-21f2-419b-8d98-4158ba0c0aa4",
+                  "name": "Four Tops",
+                  "sort-name": "Four Tops",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "2",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "motown"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "2",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "5",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "vocal group"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Four Tops",
+            "id": "000f7d8c-e48b-3552-82d0-ffc3d03e2a94",
+            "length": "180360",
+            "number": "12",
+            "position": "12",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "Motown",
+                    "id": "0d21b01f-21f2-419b-8d98-4158ba0c0aa4",
+                    "name": "Four Tops",
+                    "sort-name": "Four Tops",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "2",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "motown"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "2",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "5",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "vocal group"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Four Tops",
+              "id": "1744a4ba-a8fd-4701-adce-39db6397491f",
+              "length": "179866",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "am pop"
+                },
+                {
+                  "count": "1",
+                  "name": "classic motown"
+                },
+                {
+                  "count": "2",
+                  "name": "funk soul"
+                },
+                {
+                  "count": "2",
+                  "name": "motown"
+                },
+                {
+                  "count": "1",
+                  "name": "motown; soul; soul music"
+                },
+                {
+                  "count": "1",
+                  "name": "pop-soul"
+                },
+                {
+                  "count": "2",
+                  "name": "r&b"
+                },
+                {
+                  "count": "0",
+                  "name": "rhythm & blues"
+                },
+                {
+                  "count": "0",
+                  "name": "rock/pop"
+                },
+                {
+                  "count": "2",
+                  "name": "soul"
+                }
+              ],
+              "title": "Reach Out I\u2019ll Be There"
+            },
+            "title": "Reach Out, I\u2019ll Be There",
+            "track_or_recording_length": "180360"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                  "name": "Marvin Gaye",
+                  "sort-name": "Gaye, Marvin",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "american"
+                    },
+                    {
+                      "count": "1",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by gun"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by murder"
+                    },
+                    {
+                      "count": "4",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "0",
+                      "name": "multiple ipi"
+                    },
+                    {
+                      "count": "0",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rnb"
+                    },
+                    {
+                      "count": "0",
+                      "name": "sexual"
+                    },
+                    {
+                      "count": "3",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "8",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "the very best of"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              },
+              " & ",
+              {
+                "artist": {
+                  "id": "ce4582b6-aee7-4da1-b841-3c619d4fb5a5",
+                  "name": "Tammi Terrell",
+                  "sort-name": "Terrell, Tammi",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "death by brain tumor"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "3",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Marvin Gaye & Tammi Terrell",
+            "id": "ad214afb-b776-3b90-8f77-39dc732341be",
+            "length": "135373",
+            "number": "13",
+            "position": "13",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                    "name": "Marvin Gaye",
+                    "sort-name": "Gaye, Marvin",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "american"
+                      },
+                      {
+                        "count": "1",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by gun"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by murder"
+                      },
+                      {
+                        "count": "4",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "0",
+                        "name": "multiple ipi"
+                      },
+                      {
+                        "count": "0",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rnb"
+                      },
+                      {
+                        "count": "0",
+                        "name": "sexual"
+                      },
+                      {
+                        "count": "3",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "8",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "the very best of"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                },
+                " & ",
+                {
+                  "artist": {
+                    "id": "ce4582b6-aee7-4da1-b841-3c619d4fb5a5",
+                    "name": "Tammi Terrell",
+                    "sort-name": "Terrell, Tammi",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "death by brain tumor"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "3",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Marvin Gaye & Tammi Terrell",
+              "id": "de13a026-a707-4988-8b86-d214e42dc5d9",
+              "length": "135466",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "classic soul r b"
+                },
+                {
+                  "count": "2",
+                  "name": "pop"
+                },
+                {
+                  "count": "2",
+                  "name": "r b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b/soul"
+                },
+                {
+                  "count": "3",
+                  "name": "soul"
+                }
+              ],
+              "title": "Ain\u2019t Nothing Like the Real Thing"
+            },
+            "track_or_recording_length": "135373"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                  "name": "Marvin Gaye",
+                  "sort-name": "Gaye, Marvin",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "american"
+                    },
+                    {
+                      "count": "1",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by gun"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by murder"
+                    },
+                    {
+                      "count": "4",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "0",
+                      "name": "multiple ipi"
+                    },
+                    {
+                      "count": "0",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rnb"
+                    },
+                    {
+                      "count": "0",
+                      "name": "sexual"
+                    },
+                    {
+                      "count": "3",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "8",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "the very best of"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Marvin Gaye",
+            "id": "aeea0d65-234a-385d-8708-6001485e3a93",
+            "length": "195066",
+            "number": "14",
+            "position": "14",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                    "name": "Marvin Gaye",
+                    "sort-name": "Gaye, Marvin",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "american"
+                      },
+                      {
+                        "count": "1",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by gun"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by murder"
+                      },
+                      {
+                        "count": "4",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "0",
+                        "name": "multiple ipi"
+                      },
+                      {
+                        "count": "0",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rnb"
+                      },
+                      {
+                        "count": "0",
+                        "name": "sexual"
+                      },
+                      {
+                        "count": "3",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "8",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "the very best of"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Marvin Gaye",
+              "id": "53c6740c-7a7d-4d07-a8d2-80cb828b3eb0",
+              "length": "194560",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "blues"
+                },
+                {
+                  "count": "1",
+                  "name": "classic soul r b"
+                },
+                {
+                  "count": "1",
+                  "name": "folk rock"
+                },
+                {
+                  "count": "1",
+                  "name": "funk"
+                },
+                {
+                  "count": "1",
+                  "name": "pop"
+                },
+                {
+                  "count": "1",
+                  "name": "pop music"
+                },
+                {
+                  "count": "1",
+                  "name": "r b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b/soul"
+                },
+                {
+                  "count": "1",
+                  "name": "rock"
+                },
+                {
+                  "count": "3",
+                  "name": "soul"
+                }
+              ],
+              "title": "I Heard It Through the Grapevine"
+            },
+            "track_or_recording_length": "195066"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "e5257dc5-1edd-4fca-b7e6-1158e00522c8",
+                  "name": "The Jackson 5",
+                  "sort-name": "Jackson 5, The",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "bubblegum"
+                    },
+                    {
+                      "count": "1",
+                      "name": "bubblegum pop"
+                    },
+                    {
+                      "count": "2",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "0",
+                      "name": "pop and chart"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "3",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "The Jackson 5",
+            "id": "d550f74d-abae-3b8a-aa5e-4820a852b1e3",
+            "length": "180466",
+            "number": "15",
+            "position": "15",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "e5257dc5-1edd-4fca-b7e6-1158e00522c8",
+                    "name": "The Jackson 5",
+                    "sort-name": "Jackson 5, The",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "bubblegum"
+                      },
+                      {
+                        "count": "1",
+                        "name": "bubblegum pop"
+                      },
+                      {
+                        "count": "2",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "0",
+                        "name": "pop and chart"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "3",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "The Jackson 5",
+              "id": "fb99385c-4dfa-4b47-a039-3e34aa19a202",
+              "length": "179000",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "bubblegum"
+                },
+                {
+                  "count": "0",
+                  "name": "classic motown"
+                },
+                {
+                  "count": "2",
+                  "name": "club/dance"
+                },
+                {
+                  "count": "0",
+                  "name": "contemporary pop/rock"
+                },
+                {
+                  "count": "0",
+                  "name": "dance-pop"
+                },
+                {
+                  "count": "0",
+                  "name": "electronic"
+                },
+                {
+                  "count": "2",
+                  "name": "funk"
+                },
+                {
+                  "count": "1",
+                  "name": "funk soul"
+                },
+                {
+                  "count": "0",
+                  "name": "genre"
+                },
+                {
+                  "count": "1",
+                  "name": "i want"
+                },
+                {
+                  "count": "0",
+                  "name": "new jack swing"
+                },
+                {
+                  "count": "3",
+                  "name": "pop"
+                },
+                {
+                  "count": "2",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "0",
+                  "name": "pop/rock"
+                },
+                {
+                  "count": "0",
+                  "name": "r b"
+                },
+                {
+                  "count": "0",
+                  "name": "r b soul"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "0",
+                  "name": "rock pop"
+                },
+                {
+                  "count": "1",
+                  "name": "soul"
+                },
+                {
+                  "count": "0",
+                  "name": "soundtrack"
+                },
+                {
+                  "count": "0",
+                  "name": "urban"
+                }
+              ],
+              "title": "I Want You Back"
+            },
+            "track_or_recording_length": "180466"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "9eace815-06f3-487c-bf3a-1a817e248056",
+                  "name": "Edwin Starr",
+                  "sort-name": "Starr, Edwin",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "1",
+                      "name": "disco"
+                    },
+                    {
+                      "count": "1",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "northern soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "psychedelic soul"
+                    },
+                    {
+                      "count": "4",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Edwin Starr",
+            "id": "8bca7cf7-c041-36b6-aa2d-f5bbe2850217",
+            "length": "201626",
+            "number": "16",
+            "position": "16",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "9eace815-06f3-487c-bf3a-1a817e248056",
+                    "name": "Edwin Starr",
+                    "sort-name": "Starr, Edwin",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "1",
+                        "name": "disco"
+                      },
+                      {
+                        "count": "1",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "northern soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "psychedelic soul"
+                      },
+                      {
+                        "count": "4",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Edwin Starr",
+              "id": "36412709-35b6-4e7c-8488-ed7f6fa0140b",
+              "length": "202466",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "classic rock"
+                },
+                {
+                  "count": "1",
+                  "name": "club"
+                },
+                {
+                  "count": "0",
+                  "name": "club-house"
+                },
+                {
+                  "count": "1",
+                  "name": "deep soul"
+                },
+                {
+                  "count": "2",
+                  "name": "funk"
+                },
+                {
+                  "count": "1",
+                  "name": "funk soul"
+                },
+                {
+                  "count": "1",
+                  "name": "house"
+                },
+                {
+                  "count": "1",
+                  "name": "motown"
+                },
+                {
+                  "count": "1",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "0",
+                  "name": "pop-soul"
+                },
+                {
+                  "count": "0",
+                  "name": "psychedelic rock"
+                },
+                {
+                  "count": "2",
+                  "name": "psychedelic soul"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "rock"
+                },
+                {
+                  "count": "3",
+                  "name": "soul"
+                }
+              ],
+              "title": "War"
+            },
+            "track_or_recording_length": "201626"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "6a4c2d34-7f7f-4f87-b17f-b5540aa840db",
+                  "name": "The Miracles",
+                  "sort-name": "Miracles, The",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "0",
+                      "name": "disco"
+                    },
+                    {
+                      "count": "0",
+                      "name": "doo-wop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "motown"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "r&b"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rock and indie"
+                    },
+                    {
+                      "count": "0",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "3",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Group"
+                },
+                "name": "Smokey Robinson & The Miracles"
+              }
+            ],
+            "artist-credit-phrase": "Smokey Robinson & The Miracles",
+            "id": "b18e474b-3e05-3e9f-84c3-9737f6b377ad",
+            "length": "181240",
+            "number": "17",
+            "position": "17",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "6a4c2d34-7f7f-4f87-b17f-b5540aa840db",
+                    "name": "The Miracles",
+                    "sort-name": "Miracles, The",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "0",
+                        "name": "disco"
+                      },
+                      {
+                        "count": "0",
+                        "name": "doo-wop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "motown"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "r&b"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rock and indie"
+                      },
+                      {
+                        "count": "0",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "3",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Group"
+                  },
+                  "name": "Smokey Robinson & The Miracles"
+                }
+              ],
+              "artist-credit-phrase": "Smokey Robinson & The Miracles",
+              "id": "10a10c31-677b-4792-9cd0-aed080e94d6d",
+              "length": "180426",
+              "tag-list": [
+                {
+                  "count": "0",
+                  "name": "blues"
+                },
+                {
+                  "count": "0",
+                  "name": "club"
+                },
+                {
+                  "count": "0",
+                  "name": "genre"
+                },
+                {
+                  "count": "0",
+                  "name": "motown"
+                },
+                {
+                  "count": "3",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "1",
+                  "name": "pop-soul"
+                },
+                {
+                  "count": "0",
+                  "name": "pop/rock"
+                },
+                {
+                  "count": "0",
+                  "name": "quiet storm"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "smooth soul"
+                },
+                {
+                  "count": "8",
+                  "name": "soul"
+                },
+                {
+                  "count": "0",
+                  "name": "urban"
+                }
+              ],
+              "title": "The Tears of a Clown"
+            },
+            "track_or_recording_length": "181240"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                  "name": "Marvin Gaye",
+                  "sort-name": "Gaye, Marvin",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "american"
+                    },
+                    {
+                      "count": "1",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by gun"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by murder"
+                    },
+                    {
+                      "count": "4",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "0",
+                      "name": "multiple ipi"
+                    },
+                    {
+                      "count": "0",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rnb"
+                    },
+                    {
+                      "count": "0",
+                      "name": "sexual"
+                    },
+                    {
+                      "count": "3",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "8",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "the very best of"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Marvin Gaye",
+            "id": "83afeff1-efa0-36f9-a588-b905003ab022",
+            "length": "232266",
+            "number": "18",
+            "position": "18",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                    "name": "Marvin Gaye",
+                    "sort-name": "Gaye, Marvin",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "american"
+                      },
+                      {
+                        "count": "1",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by gun"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by murder"
+                      },
+                      {
+                        "count": "4",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "0",
+                        "name": "multiple ipi"
+                      },
+                      {
+                        "count": "0",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rnb"
+                      },
+                      {
+                        "count": "0",
+                        "name": "sexual"
+                      },
+                      {
+                        "count": "3",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "8",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "the very best of"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Marvin Gaye",
+              "disambiguation": "original LP version",
+              "id": "5a80bd9b-4d50-4329-a392-005e9b4be48f",
+              "length": "233000",
+              "tag-list": [
+                {
+                  "count": "2",
+                  "name": "am pop"
+                },
+                {
+                  "count": "1",
+                  "name": "blues"
+                },
+                {
+                  "count": "2",
+                  "name": "classic soul r b"
+                },
+                {
+                  "count": "2",
+                  "name": "motown"
+                },
+                {
+                  "count": "1",
+                  "name": "pop"
+                },
+                {
+                  "count": "1",
+                  "name": "pop-soul"
+                },
+                {
+                  "count": "1",
+                  "name": "pop/rock"
+                },
+                {
+                  "count": "1",
+                  "name": "psychedelic soul"
+                },
+                {
+                  "count": "2",
+                  "name": "r b"
+                },
+                {
+                  "count": "2",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b/soul"
+                },
+                {
+                  "count": "1",
+                  "name": "rhythm & blues"
+                },
+                {
+                  "count": "1",
+                  "name": "rhythm and blues"
+                },
+                {
+                  "count": "1",
+                  "name": "rock"
+                },
+                {
+                  "count": "1",
+                  "name": "smooth soul"
+                },
+                {
+                  "count": "5",
+                  "name": "soul"
+                },
+                {
+                  "count": "1",
+                  "name": "soundtrack"
+                }
+              ],
+              "title": "What\u2019s Going On"
+            },
+            "track_or_recording_length": "232266"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                  "name": "Marvin Gaye",
+                  "sort-name": "Gaye, Marvin",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "american"
+                    },
+                    {
+                      "count": "1",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by gun"
+                    },
+                    {
+                      "count": "-2",
+                      "name": "death by murder"
+                    },
+                    {
+                      "count": "4",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "0",
+                      "name": "multiple ipi"
+                    },
+                    {
+                      "count": "0",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rnb"
+                    },
+                    {
+                      "count": "0",
+                      "name": "sexual"
+                    },
+                    {
+                      "count": "3",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "8",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    },
+                    {
+                      "count": "-1",
+                      "name": "the very best of"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Marvin Gaye",
+            "id": "fdd92839-aa1c-313c-85f7-c0e1d9b5f863",
+            "length": "242493",
+            "number": "19",
+            "position": "19",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "afdb7919-059d-43c1-b668-ba1d265e7e42",
+                    "name": "Marvin Gaye",
+                    "sort-name": "Gaye, Marvin",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "american"
+                      },
+                      {
+                        "count": "1",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by gun"
+                      },
+                      {
+                        "count": "-2",
+                        "name": "death by murder"
+                      },
+                      {
+                        "count": "4",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "0",
+                        "name": "multiple ipi"
+                      },
+                      {
+                        "count": "0",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rnb"
+                      },
+                      {
+                        "count": "0",
+                        "name": "sexual"
+                      },
+                      {
+                        "count": "3",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "8",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      },
+                      {
+                        "count": "-1",
+                        "name": "the very best of"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Marvin Gaye",
+              "disambiguation": "single edit",
+              "id": "5f0ff901-922e-44ce-832e-7d126eaa9f14",
+              "length": "241000",
+              "tag-list": [
+                {
+                  "count": "0",
+                  "name": "blues"
+                },
+                {
+                  "count": "1",
+                  "name": "easy listening"
+                },
+                {
+                  "count": "2",
+                  "name": "old school"
+                },
+                {
+                  "count": "0",
+                  "name": "oldies"
+                },
+                {
+                  "count": "1",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "2",
+                  "name": "r b"
+                },
+                {
+                  "count": "0",
+                  "name": "rock"
+                },
+                {
+                  "count": "1",
+                  "name": "smooth soul"
+                },
+                {
+                  "count": "3",
+                  "name": "soul"
+                },
+                {
+                  "count": "0",
+                  "name": "soul; funk; lounge; r&b; philly soul"
+                }
+              ],
+              "title": "Let\u2019s Get It On"
+            },
+            "track_or_recording_length": "242493"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "6a4c2d34-7f7f-4f87-b17f-b5540aa840db",
+                  "name": "The Miracles",
+                  "sort-name": "Miracles, The",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "0",
+                      "name": "disco"
+                    },
+                    {
+                      "count": "0",
+                      "name": "doo-wop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "motown"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "r&b"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rhythm & blues"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rock and indie"
+                    },
+                    {
+                      "count": "0",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "3",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "The Miracles",
+            "id": "412ca2ad-5fd9-3920-8568-39a762c96e83",
+            "length": "179773",
+            "number": "20",
+            "position": "20",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "6a4c2d34-7f7f-4f87-b17f-b5540aa840db",
+                    "name": "The Miracles",
+                    "sort-name": "Miracles, The",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "0",
+                        "name": "disco"
+                      },
+                      {
+                        "count": "0",
+                        "name": "doo-wop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "motown"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "r&b"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rhythm & blues"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rock and indie"
+                      },
+                      {
+                        "count": "0",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "3",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "The Miracles",
+              "id": "1ff927c2-368e-450b-b555-5e47a0fd7a79",
+              "length": "179773",
+              "title": "Love Machine (Part 1)"
+            },
+            "track_or_recording_length": "179773"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "cb327970-cf95-4f2d-91db-b1b787aa51f9",
+                  "name": "Thelma Houston",
+                  "sort-name": "Houston, Thelma",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "1",
+                      "name": "disco"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Thelma Houston",
+            "id": "d88a706c-faf0-3751-ba2e-a904f7803e22",
+            "length": "220226",
+            "number": "21",
+            "position": "21",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "cb327970-cf95-4f2d-91db-b1b787aa51f9",
+                    "name": "Thelma Houston",
+                    "sort-name": "Houston, Thelma",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "1",
+                        "name": "disco"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Thelma Houston",
+              "id": "7fcd4a72-40c5-4edf-9d75-8f9ffd00898e",
+              "length": "218000",
+              "tag-list": [
+                {
+                  "count": "0",
+                  "name": "255"
+                },
+                {
+                  "count": "6",
+                  "name": "disco"
+                },
+                {
+                  "count": "1",
+                  "name": "funk soul"
+                },
+                {
+                  "count": "0",
+                  "name": "rock"
+                },
+                {
+                  "count": "2",
+                  "name": "soul"
+                }
+              ],
+              "title": "Don\u2019t Leave Me This Way"
+            },
+            "track_or_recording_length": "220226"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "US funk/soul band with Lionel Richie",
+                  "id": "900ab237-327b-44e2-87e4-73250bbe025a",
+                  "name": "Commodores",
+                  "sort-name": "Commodores",
+                  "tag-list": [
+                    {
+                      "count": "2",
+                      "name": "adult contemporary"
+                    },
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "2",
+                      "name": "disco"
+                    },
+                    {
+                      "count": "3",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Commodores",
+            "id": "bc795723-597b-3ace-963e-87ab594439aa",
+            "length": "218066",
+            "number": "22",
+            "position": "22",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "US funk/soul band with Lionel Richie",
+                    "id": "900ab237-327b-44e2-87e4-73250bbe025a",
+                    "name": "Commodores",
+                    "sort-name": "Commodores",
+                    "tag-list": [
+                      {
+                        "count": "2",
+                        "name": "adult contemporary"
+                      },
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "2",
+                        "name": "disco"
+                      },
+                      {
+                        "count": "3",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Commodores",
+              "disambiguation": "single version",
+              "id": "dfe515ec-736f-4d41-9184-c00e51095e66",
+              "length": "218000",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "adult contemporary"
+                },
+                {
+                  "count": "1",
+                  "name": "contemporary r b"
+                },
+                {
+                  "count": "0",
+                  "name": "easy listening"
+                },
+                {
+                  "count": "1",
+                  "name": "funk"
+                },
+                {
+                  "count": "0",
+                  "name": "funk soul"
+                },
+                {
+                  "count": "1",
+                  "name": "pop music"
+                },
+                {
+                  "count": "3",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "soul"
+                }
+              ],
+              "title": "Three Times a Lady"
+            },
+            "track_or_recording_length": "218066"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "60d41417-feda-4734-bbbf-7dcc30e08a83",
+                  "name": "Diana Ross",
+                  "sort-name": "Ross, Diana",
+                  "tag-list": [
+                    {
+                      "count": "1",
+                      "name": "adult contemporary"
+                    },
+                    {
+                      "count": "0",
+                      "name": "american"
+                    },
+                    {
+                      "count": "0",
+                      "name": "classic pop and rock"
+                    },
+                    {
+                      "count": "1",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "3",
+                      "name": "disco"
+                    },
+                    {
+                      "count": "2",
+                      "name": "jazz"
+                    },
+                    {
+                      "count": "1",
+                      "name": "mezzo-soprano"
+                    },
+                    {
+                      "count": "1",
+                      "name": "motown"
+                    },
+                    {
+                      "count": "3",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "rnb"
+                    },
+                    {
+                      "count": "3",
+                      "name": "soul"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              },
+              " & ",
+              {
+                "artist": {
+                  "id": "3cb25fb2-5547-4b05-adec-1a5e37830d46",
+                  "name": "Lionel Richie",
+                  "sort-name": "Richie, Lionel",
+                  "tag-list": [
+                    {
+                      "count": "0",
+                      "name": "adult contemporary"
+                    },
+                    {
+                      "count": "1",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "0",
+                      "name": "funk"
+                    },
+                    {
+                      "count": "1",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "0",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "3",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Diana Ross & Lionel Richie",
+            "id": "ad1b94ca-797f-3d22-b576-b48036fd4d41",
+            "length": "266400",
+            "number": "23",
+            "position": "23",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "60d41417-feda-4734-bbbf-7dcc30e08a83",
+                    "name": "Diana Ross",
+                    "sort-name": "Ross, Diana",
+                    "tag-list": [
+                      {
+                        "count": "1",
+                        "name": "adult contemporary"
+                      },
+                      {
+                        "count": "0",
+                        "name": "american"
+                      },
+                      {
+                        "count": "0",
+                        "name": "classic pop and rock"
+                      },
+                      {
+                        "count": "1",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "3",
+                        "name": "disco"
+                      },
+                      {
+                        "count": "2",
+                        "name": "jazz"
+                      },
+                      {
+                        "count": "1",
+                        "name": "mezzo-soprano"
+                      },
+                      {
+                        "count": "1",
+                        "name": "motown"
+                      },
+                      {
+                        "count": "3",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "rnb"
+                      },
+                      {
+                        "count": "3",
+                        "name": "soul"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                },
+                " & ",
+                {
+                  "artist": {
+                    "id": "3cb25fb2-5547-4b05-adec-1a5e37830d46",
+                    "name": "Lionel Richie",
+                    "sort-name": "Richie, Lionel",
+                    "tag-list": [
+                      {
+                        "count": "0",
+                        "name": "adult contemporary"
+                      },
+                      {
+                        "count": "1",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "0",
+                        "name": "funk"
+                      },
+                      {
+                        "count": "1",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "0",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "3",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Diana Ross & Lionel Richie",
+              "id": "6823d79c-0bd7-469e-9577-8d568c4ce7c0",
+              "length": "267053",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "1980s"
+                },
+                {
+                  "count": "1",
+                  "name": "adult contemporary"
+                },
+                {
+                  "count": "1",
+                  "name": "am pop"
+                },
+                {
+                  "count": "1",
+                  "name": "classic motown"
+                },
+                {
+                  "count": "1",
+                  "name": "disco"
+                },
+                {
+                  "count": "0",
+                  "name": "funk / soul"
+                },
+                {
+                  "count": "2",
+                  "name": "motown"
+                },
+                {
+                  "count": "0",
+                  "name": "need composers"
+                },
+                {
+                  "count": "2",
+                  "name": "pop"
+                },
+                {
+                  "count": "1",
+                  "name": "pop music"
+                },
+                {
+                  "count": "2",
+                  "name": "pop soul"
+                },
+                {
+                  "count": "1",
+                  "name": "pop-soul"
+                },
+                {
+                  "count": "2",
+                  "name": "r b"
+                },
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "rock"
+                },
+                {
+                  "count": "0",
+                  "name": "rock pop"
+                },
+                {
+                  "count": "2",
+                  "name": "soul"
+                },
+                {
+                  "count": "0",
+                  "name": "soul and reggae"
+                },
+                {
+                  "count": "1",
+                  "name": "urban"
+                }
+              ],
+              "title": "Endless Love"
+            },
+            "track_or_recording_length": "266400"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "b6fd4928-89db-4bbd-b5f4-8fb98f9f02ff",
+                  "name": "DeBarge",
+                  "sort-name": "DeBarge",
+                  "tag-list": [
+                    {
+                      "count": "1",
+                      "name": "classic pop and rock"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "DeBarge",
+            "id": "5640a3d9-87ee-3e46-80b9-753bbb61224b",
+            "length": "235066",
+            "number": "24",
+            "position": "24",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "b6fd4928-89db-4bbd-b5f4-8fb98f9f02ff",
+                    "name": "DeBarge",
+                    "sort-name": "DeBarge",
+                    "tag-list": [
+                      {
+                        "count": "1",
+                        "name": "classic pop and rock"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "DeBarge",
+              "id": "d08ca382-4a74-479c-9098-996e3b8f8e5e",
+              "length": "231000",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "r&b"
+                },
+                {
+                  "count": "1",
+                  "name": "rock"
+                }
+              ],
+              "title": "Rhythm of the Night"
+            },
+            "track_or_recording_length": "235066"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "id": "b42eca0f-9381-43db-badb-1cba080a7dc2",
+                  "name": "Boyz II Men",
+                  "sort-name": "Boyz II Men",
+                  "tag-list": [
+                    {
+                      "count": "2",
+                      "name": "contemporary r&b"
+                    },
+                    {
+                      "count": "3",
+                      "name": "new jack swing"
+                    },
+                    {
+                      "count": "4",
+                      "name": "pop"
+                    },
+                    {
+                      "count": "2",
+                      "name": "pop soul"
+                    },
+                    {
+                      "count": "2",
+                      "name": "r&b"
+                    },
+                    {
+                      "count": "1",
+                      "name": "smooth soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "0",
+                      "name": "soul and reggae"
+                    }
+                  ],
+                  "type": "Group"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Boyz II Men",
+            "id": "6368e48c-de55-342a-94d7-3435dcf2b051",
+            "length": "237200",
+            "number": "25",
+            "position": "25",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "id": "b42eca0f-9381-43db-badb-1cba080a7dc2",
+                    "name": "Boyz II Men",
+                    "sort-name": "Boyz II Men",
+                    "tag-list": [
+                      {
+                        "count": "2",
+                        "name": "contemporary r&b"
+                      },
+                      {
+                        "count": "3",
+                        "name": "new jack swing"
+                      },
+                      {
+                        "count": "4",
+                        "name": "pop"
+                      },
+                      {
+                        "count": "2",
+                        "name": "pop soul"
+                      },
+                      {
+                        "count": "2",
+                        "name": "r&b"
+                      },
+                      {
+                        "count": "1",
+                        "name": "smooth soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "0",
+                        "name": "soul and reggae"
+                      }
+                    ],
+                    "type": "Group"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Boyz II Men",
+              "id": "b6572748-1cf0-45c9-bcac-b60a5436fde6",
+              "length": "237813",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "creepy"
+                },
+                {
+                  "count": "1",
+                  "name": "electronica dance"
+                },
+                {
+                  "count": "1",
+                  "name": "general pop"
+                },
+                {
+                  "count": "1",
+                  "name": "hip hop"
+                },
+                {
+                  "count": "2",
+                  "name": "pop"
+                },
+                {
+                  "count": "3",
+                  "name": "r b"
+                },
+                {
+                  "count": "2",
+                  "name": "r&b"
+                }
+              ],
+              "title": "I\u2019ll Make Love to You"
+            },
+            "track_or_recording_length": "237200"
+          },
+          {
+            "artist-credit": [
+              {
+                "artist": {
+                  "disambiguation": "R&B & soul singer",
+                  "id": "cacbe57b-02d0-4d21-be86-c8a3a5ea6e1e",
+                  "name": "Michael McDonald",
+                  "sort-name": "McDonald, Michael",
+                  "tag-list": [
+                    {
+                      "count": "1",
+                      "name": "soul"
+                    },
+                    {
+                      "count": "1",
+                      "name": "soul and reggae"
+                    }
+                  ],
+                  "type": "Person"
+                }
+              }
+            ],
+            "artist-credit-phrase": "Michael McDonald",
+            "id": "a97e4350-d72d-3f01-8ab2-c49d14e1ea7a",
+            "length": "168666",
+            "number": "26",
+            "position": "26",
+            "recording": {
+              "artist-credit": [
+                {
+                  "artist": {
+                    "disambiguation": "R&B & soul singer",
+                    "id": "cacbe57b-02d0-4d21-be86-c8a3a5ea6e1e",
+                    "name": "Michael McDonald",
+                    "sort-name": "McDonald, Michael",
+                    "tag-list": [
+                      {
+                        "count": "1",
+                        "name": "soul"
+                      },
+                      {
+                        "count": "1",
+                        "name": "soul and reggae"
+                      }
+                    ],
+                    "type": "Person"
+                  }
+                }
+              ],
+              "artist-credit-phrase": "Michael McDonald",
+              "id": "65148639-98f4-4298-ac68-a294f8aeb8bb",
+              "length": "169426",
+              "tag-list": [
+                {
+                  "count": "1",
+                  "name": "adult contemporary"
+                },
+                {
+                  "count": "1",
+                  "name": "rhythm & blues"
+                }
+              ],
+              "title": "Ain\u2019t No Mountain High Enough"
+            },
+            "track_or_recording_length": "168666"
+          }
+        ]
+      }
+    ],
+    "packaging": "Jewel Case",
+    "quality": "normal",
+    "release-event-count": 1,
+    "release-event-list": [
+      {
+        "area": {
+          "id": "489ce91b-6658-3307-9877-795b68554c98",
+          "iso-3166-1-code-list": [
+            "US"
+          ],
+          "name": "United States",
+          "sort-name": "United States"
+        },
+        "date": "2004-04-20"
+      }
+    ],
+    "status": "Official",
+    "tag-list": [
+      {
+        "count": "1",
+        "name": "motown"
+      },
+      {
+        "count": "1",
+        "name": "soul"
+      }
+    ],
+    "text-representation": {
+      "language": "eng",
+      "script": "Latn"
+    },
+    "title": "Motown 1\u2019s"
+  }
+}
+SELECT uid, dispname FROM artist where match (dispname) against ('Various Artists') or dispname like '%Various Artists%'
+0: No matching artist
+1: Various Artists
+2: Windham Hill Artists
+select artist: artistid = 14
+0: No matching album
+1: GJK 14 Motown 25 #1 Hits From 25 Years [Disc 2]
+2: SPD 14 Motown Milestones: Motown Meets the Beatles
+3: TPF 14 A Motown Christmas
+4: LRV 14 Hitsville USA: The Motown Singles Collection 1959-1971
+5: KRY 14 The Ultimate Motown Christmas Collection
+6: GRZ 14 Motown Christmas
+7: DSB 14 The Best of Motown Christmas - The Christmas Collection
+8: SSI 14 Motown #1's
+9: ATL 14 Motown 1's
+select album: 

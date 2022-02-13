@@ -1,0 +1,39 @@
+#!/usr/bin/perl
+#use strict;
+
+use DBI;
+
+$db = "music";
+$host = "localhost";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+$sql = "SELECT cdtag from album where cover != '0' or cover is null";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+print "The following albums don't have covers:\n";
+
+$n=0;
+while ($row = $sth->fetchrow_hashref)
+  {
+    $cdtag = $row->{'cdtag'};
+    $cdtag = lc($cdtag);
+    $file = "/music/$cdtag/cover.jpg";
+    if (!-e $file) {
+      print "$cdtag $file\n";
+      $sql2 = "update album set cover = 'N' where cdtag = '$cdtag'";
+    }else{
+      $sql2 = "update album set cover = 'Y' where cdtag = '$cdtag'";
+    }
+    #print "$sql2\n";
+    $sth2 = $dbh->prepare($sql2) or die "preparing: ",$dbh->errstr;
+    $sth2->execute or die "executing: ", $dbh->errstr;
+  }
+
+

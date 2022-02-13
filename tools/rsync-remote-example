@@ -1,0 +1,4 @@
+# copy local /music to remote, deleting extra remote files but ignoring some local and remote directories. Results in logfile. 
+
+
+rsync -Wrvv --del --size-only -e ssh --exclude "trash" --exclude "import" --exclude "backup" --exclude "bigbrother" --exclude "movies" /music/ 69.54.29.215:/music > dp.log

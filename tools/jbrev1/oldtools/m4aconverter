@@ -1,0 +1,7 @@
+#!/bin/bash
+find . -name "*.m4a" | while read D;
+do
+	echo -e "Converting '${D}'"
+	pacpl --delete --overwrite --to mp3 "$D"
+
+done

@@ -1,0 +1,3 @@
+#!/bin/bash
+chown -R wkuhns:www-data /music/*
+chmod -R g+rw+X /music/*

@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+#use strict;
+
+use DBI;
+
+$db = "music"; 
+$host = "flint";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+$sql = "SELECT urlFROM track";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+$n=0;
+while ($row = $sth->fetchrow_hashref)
+  {
+    if (!-e $row->{'url'}) {
+    print "$row->{'url'}\n";
+  }
+
+}

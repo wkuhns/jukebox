@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]
+then
+ echo "Error: no path specified. Format: ./jukebox-export <path> (/mnt/sdd1, for example)"
+ exit 1
+fi
+
+if [ ! -e $1 ]
+then
+  echo "Error: path does not exist"
+  exit 1
+fi
+
+echo "Creating database dump"
+
+mysqldump --user wkuhns --result-file /music/jukebox.sql jukebox
+
+echo "Creating application tar file"
+
+cd /home/httpd/html/jukebox3; tar -czf /music/jukebox.tgz .
+
+echo "exporting jukebox to $1"
+
+rsync -avh --del --exclude-from='/music/tools/export-excludes.txt' /music/ $1
+

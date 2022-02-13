@@ -1,0 +1,76 @@
+#!/usr/bin/perl
+#use strict;
+# Make track and listitem records for cd where CDDB is not available. 
+# cdtag value must be supplied on command line.
+# /music/<cdtag> must exist, and audio_xx.wav files must be in directory.
+
+use DBI;
+
+unless ($ARGV[0]){
+  die "Must specify CD tag on command line\n";
+}
+
+
+$db = "music"; 
+$host = "flint";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+# Try to find artist
+
+$cdtag = uc($ARGV[0]);
+$sql = "SELECT uid,artistid,genre FROM album WHERE cdtag='$cdtag'";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+$n=0;
+while ($row = $sth->fetchrow_hashref)
+  {
+    #print $row->{'uid'},'<BR>';
+    $albumid = $row->{'uid'};
+    $artistid = $row->{'artistid'};
+    $genre = $row->{'genre'};
+    $n++;
+  }
+
+if ($n){
+  print "Found album: $albumid $a\n";
+} else {
+  die "No album";
+}
+
+# Write track and listitem records
+$cdtag = lc($cdtag);
+$f = sprintf("%02d",$n);
+
+opendir $dh,"/music/$ARGV[0]";
+#print readdir $dh;
+$n=0;
+foreach $i (readdir $dh) {
+  ($a,$b) = split(/\./, $i);
+  if ($b eq "wav") {
+     print "$n: $a; $b= $i\n";
+     $n++;
+     $sql = "INSERT INTO track (artistid,title,url,genre,source,seq,rating) values ($artistid,'Track $n','\/music\/$cdtag\/$i','$genre','cd',$n,3)";
+  print "$sql\n";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+  $trackid = $sth->{'mysql_insertid'};
+  $sql = "INSERT INTO listitem (trackid,albumid,seq) values ($trackid,$albumid,$n)";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+
+  #print "$sql\n";
+  print "track $n: $i\n";
+   }
+}
+
+
+print "\nAll Done with $cdtag - created $n tracks\n";
+
+

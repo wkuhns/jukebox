@@ -1,0 +1,163 @@
+#!/bin/bash
+
+# Todo
+# - see how reacts with permission denied
+# - options for how to parse filenames
+# - It'S, Ii, Iii
+
+runDirs=false;	#d	rename directories
+runFiles=false;	#f	rename files
+verbose=false;	#v	spit out a bunch of info
+
+convertm4a=false; #c	convert m4a to mp3
+removem4a=false; # r	remove m4a file after conversion
+
+
+pathArgs=0;
+animCount=0;
+dirCount=0;
+convCount=0;
+fileCount=0;
+itemCount=0;
+
+clear
+
+function animate() {
+	let animCount+=1;
+	let itemCount+=1;
+	echo -ne "\r";
+	t=$(( $animCount/5 ));
+	case $t in
+		0 ) echo -ne "[#    ]"; ;;
+		1 ) echo -ne "[ #   ]"; ;;
+		2 ) echo -ne "[  #  ]"; ;;
+		3 ) echo -ne "[   # ]"; ;;
+		4 ) echo -ne "[    #]"; let animCount=0 ;;
+	esac
+	echo -ne "\t$itemCount Items Scanned ";
+
+}
+
+function convertm4a() {
+	echo -e "\n\nConverting $1";
+	tagList="`faad -i \"$1\" 2>&1|grep -e '^title:' -e '^artist:' -e '^album:' -e '^genre:' -e '^track:' -e '^totaltracks:'`";
+	for tag in title artist album genre track totaltracks; do
+		export $tag="`echo "$tagList" | grep -e "^$tag:" | cut '-d:' -f2 | cut '-b2-'`"
+	done 
+
+	if [ `lame --genre-list|grep "$genre"|cut '-b1'` ]; then
+		tg="--tg \"$genre\"";
+	else
+		tg="";
+	fi 
+
+	newMp3Name="${1%.m4a}.mp3";
+	faad -o - "$1" | lame --tt "$title" --ta "$artist" --tn "$track/$totaltracks" --tl "$album" $tg - "$newMp3Name"
+
+	if test -s "$newMp3Name"; then
+		echo "Appears to be a success!";
+		if [ $removem4a == "true" ]; then
+			echo "Deleting Old File";
+			rm -f "$1"
+		fi
+		chmod 777 "$newMp3Name"
+		let convCount+=1;
+	fi
+	echo;
+}
+
+function runDir()
+{
+	if !(test -d "$1"); then return; fi
+
+	cd "$1"
+	
+	for i in *
+	do
+		if [ $verbose == "false" ]; then animate; fi
+		newName="`echo "$i" | sed 's/_/\ /g' | sed 's/  /\ /g' | perl -p -e 's/(\\w+)/\\u\\L$1/g;' | sed 's/Mp3/mp3/g'`";
+		if test -d "$i"; then
+			if [ $verbose == "true" ]; then echo -e "\nDirectory: $i"; fi
+			if [ $runDirs == "true" ]; then 
+				if [ "$i" != "$newName" ]; then
+					if [ $verbose == "true" ]; then echo "Renaming To: $newName"; fi
+					mv "$i" "$newName";
+					let dirCount+=1;
+				fi
+				runDir "$newName";
+			else
+				runDir "$i";
+			fi
+			cd ..
+		elif test -f "$i"; then
+	
+			if [ $verbose == "true" ]; then 
+				if [ $runFiles == "true" -o $runDirs == "false" ]; then 
+					echo "   File: $i";
+				fi
+			fi
+			if [ $runFiles == "true" ] ; then
+				if [ "$i" != "$newName" ]; then 
+					if [ $verbose == "true" ]; then echo "   Renaming To: $newName"; fi
+					mv "$i" "$newName";
+					let fileCount+=1;
+					i=$newName;
+				fi
+			fi
+			if [ $convertm4a == "true" ]; then
+				if [[ `echo "$i" | grep '.m4a'` ]]; then
+					convertm4a "$i"
+				fi
+			fi
+		fi
+	done
+}
+
+
+for i in $*; do
+	if [ `echo "$i" | grep '-'` ]; then 
+		if [ `echo "$i" | grep -G "[(--help)(h)]"` ]; then 
+			echo -e "SKwizard 1.0 - 2008\n---------------------\nClean up your music file collection and more!\nhttp://www.scottklarr.com\n---------------------\n";
+			echo -e "Usage: skwizard [-dfcr] [/target/path/]";
+
+			echo -e "\nRename Files & Directories";
+			echo -e "\t-d\t\tProcess Directories";
+			echo -e "\t-f\t\tProcess Files";
+#			echo -e "\t-v\t\tVerbose - when used alone will do a non-destructive scan";
+
+			echo -e "\nM4A to MP3 Conversions";
+			echo -e "\t-c\t\tConvert all M4A files to MP3";
+			echo -e "\t-r\t\tRemove M4A files after successful conversion";
+
+			echo;
+			exit 0;
+		fi
+		if [ `echo "$i" | grep 'v'` ]; then verbose=true; fi
+		if [ `echo "$i" | grep 'f'` ]; then runFiles=true; fi
+		if [ `echo "$i" | grep 'd'` ]; then runDirs=true; fi
+		if [ `echo "$i" | grep 'c'` ]; then convertm4a=true; fi
+		if [ `echo "$i" | grep 'r'` ]; then removem4a=true; fi
+	else
+		if test -d "$i"; then
+			echo "Im about to crawl: $i"
+			let pathArgs+=1;
+			runDir $i;
+		else
+			echo "$i is not a valid starting point!";
+			exit 1;
+		fi
+	fi
+done;
+
+if [ $runDirs == "false" -a $runFiles == "false" -a $verbose == "false" -a $convertm4a == "false" ]; then
+	echo -e "What do you want me to do?!\nTry running: skwizard --help";
+	exit 1;
+fi
+
+if [ $pathArgs == 0 ]; then
+	echo "Im about to crawl: `pwd`";
+	runDir ".";
+fi
+
+echo -e " \n$dirCount Directories Renamed\n$fileCount Files Renamed\n$convCount Files Converted\n\n------------------------\nThanks for using SKwizard!\nYou can contact me at scott@scottklarr.com\n------------------------\n";
+exit 0;

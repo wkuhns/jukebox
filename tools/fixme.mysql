@@ -1,0 +1,55 @@
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 1','/music/i/o/n/audio_00.wav',126,1,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61187,9134,1)
+track 1: audio_04.wav
+1: track14; wav= track14.cdda.wav, trk=14
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 2','/music/i/o/n/audio_00.wav',126,2,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61188,9134,2)
+track 2: audio_14.wav
+2: track08; wav= track08.cdda.wav, trk=08
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 3','/music/i/o/n/audio_00.wav',126,3,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61189,9134,3)
+track 3: audio_08.wav
+3: track11; wav= track11.cdda.wav, trk=11
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 4','/music/i/o/n/audio_00.wav',126,4,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61190,9134,4)
+track 4: audio_11.wav
+4: track12; wav= track12.cdda.wav, trk=12
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 5','/music/i/o/n/audio_00.wav',126,5,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61191,9134,5)
+track 5: audio_12.wav
+5: track13; wav= track13.cdda.wav, trk=13
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 6','/music/i/o/n/audio_00.wav',126,6,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61192,9134,6)
+track 6: audio_13.wav
+6: track03; wav= track03.cdda.wav, trk=03
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 7','/music/i/o/n/audio_00.wav',126,7,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61193,9134,7)
+track 7: audio_03.wav
+7: track09; wav= track09.cdda.wav, trk=09
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 8','/music/i/o/n/audio_00.wav',126,8,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61194,9134,8)
+track 8: audio_09.wav
+8: track07; wav= track07.cdda.wav, trk=07
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 9','/music/i/o/n/audio_00.wav',126,9,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61195,9134,9)
+track 9: audio_07.wav
+9: track05; wav= track05.cdda.wav, trk=05
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 10','/music/i/o/n/audio_00.wav',126,10,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61196,9134,10)
+track 10: audio_05.wav
+10: track02; wav= track02.cdda.wav, trk=02
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 11','/music/i/o/n/audio_00.wav',126,11,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61197,9134,11)
+track 11: audio_02.wav
+11: track01; wav= track01.cdda.wav, trk=01
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 12','/music/i/o/n/audio_00.wav',126,12,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61198,9134,12)
+track 12: audio_01.wav
+12: track10; wav= track10.cdda.wav, trk=10
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 13','/music/i/o/n/audio_00.wav',126,13,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61199,9134,13)
+track 13: audio_10.wav
+13: track06; wav= track06.cdda.wav, trk=06
+INSERT INTO track (artistid,title,url,genre1,seq,rating,ftype,pscore,volume) values (7391,'Track 14','/music/i/o/n/audio_00.wav',126,14,60,1,110,0.95)
+INSERT INTO listitem (trackid,albumid,seq) values (61200,9134,14)
+track 14: audio_06.wav

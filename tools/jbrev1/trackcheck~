@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+#use strict;
+
+use DBI;
+
+$db = "music";
+$host = "localhost";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+$sql = "SELECT url, album.title, artist.dispname, track.title, cdtag from album,artist,listitem,track where artist.uid=album.artistid and listitem.albumid=album.uid and listitem.trackid=track.uid";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+print "The following tracks appear to be missing from the disk:\n";
+
+$n=0;
+while ($row = $sth->fetchrow_hashref)
+  {
+    if (!-e $row->{'url'}) {
+    print "$row->{'cdtag'}  $row->{'url'} $row->{'album.title'} $row->{'artist.dispname'} $row->{'track.title'}  \n";
+  }
+
+}

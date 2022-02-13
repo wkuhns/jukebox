@@ -1,0 +1,75 @@
+#!/usr/bin/perl
+use DBI;
+use CDDB_get qw( get_cddb );
+
+#mkdir "/music/upload";
+chdir "/music/upload";
+
+#exec "cdda2wav -Bgsx -L1 dev=/dev/hdc";
+
+my %config;
+$config{CDDB_HOST}="freedb.freedb.org";        # set cddb host
+$config{CDDB_PORT}=8880;                       # set cddb port
+$config{CDDB_MODE}="cddb";                     # set cddb mode: cddb or http
+$config{CD_DEVICE}="/dev/cdrom";               # set cd device
+
+# user interaction welcome?
+$config{input}=0;   # 0: ask user if more than one possibility
+my %cd=get_cddb(\%config);
+
+unless(defined $cd{title}) {
+  die "no cddb entry found";
+}
+
+# do somthing with the results
+
+print "artist: $cd{artist}\n";
+print "title: $cd{title}\n";
+print "category: $cd{cat}\n";
+print "cddbid: $cd{id}\n";
+print "trackno: $cd{tno}\n";
+
+my $n=1;
+foreach my $i ( @{$cd{track}} ) {
+  print "track $n: $i\n";
+  $n++;
+}
+
+open(cdfile,"audio.cddb") || die "Could not open audio.cddb\n";
+
+while(<cdfile>){
+ if (/DTITLE=/) {
+   $tline = $';
+   print "$tline\n";
+   ($artist,$title) = split(/\//,$tline);
+   chomp($artist);
+   $title =~ s/^ |\t|\n//;
+ }
+}
+
+$db = "music"; 
+$host = "flint";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+$sql = "SELECT uid FROM artist where dispname='$artist'";
+
+# executing the SQL statement.
+
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+#print "content-type: text/html\n\n";
+
+# one of the functions to retrieve data from the table results
+# check perldoc DBI for more methods.
+
+while ($row = $sth->fetchrow_hashref)
+{
+  print $row->{'uid'},'<BR>';
+}

@@ -1,0 +1,895 @@
+{
+  "release": {
+    "artist-credit": [
+      {
+        "artist": {
+          "id": "9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa", 
+          "name": "The Who", 
+          "sort-name": "Who, The", 
+          "tag-list": [
+            {
+              "count": "2", 
+              "name": "art rock"
+            }, 
+            {
+              "count": "0", 
+              "name": "britannique"
+            }, 
+            {
+              "count": "4", 
+              "name": "british"
+            }, 
+            {
+              "count": "1", 
+              "name": "british invasion"
+            }, 
+            {
+              "count": "1", 
+              "name": "classic pop and rock"
+            }, 
+            {
+              "count": "1", 
+              "name": "classic rock"
+            }, 
+            {
+              "count": "0", 
+              "name": "english"
+            }, 
+            {
+              "count": "2", 
+              "name": "freakbeat"
+            }, 
+            {
+              "count": "4", 
+              "name": "hard rock"
+            }, 
+            {
+              "count": "3", 
+              "name": "mod"
+            }, 
+            {
+              "count": "1", 
+              "name": "pop rock"
+            }, 
+            {
+              "count": "7", 
+              "name": "rock"
+            }, 
+            {
+              "count": "2", 
+              "name": "rock opera"
+            }, 
+            {
+              "count": "1", 
+              "name": "uk"
+            }
+          ], 
+          "type": "Group"
+        }
+      }
+    ], 
+    "artist-credit-phrase": "The Who", 
+    "barcode": "076733700128", 
+    "country": "US", 
+    "cover-art-archive": {
+      "artwork": "true", 
+      "back": "false", 
+      "count": "1", 
+      "front": "false"
+    }, 
+    "date": "1998-06-16", 
+    "id": "83afaba2-c706-4a43-b1c0-f4fa0225dfe8", 
+    "medium-count": 1, 
+    "medium-list": [
+      {
+        "format": "CD", 
+        "position": "1", 
+        "track-count": 14, 
+        "track-list": [
+          {
+            "id": "49f37111-f45d-3055-af7d-9058d5fd4208", 
+            "length": "125360", 
+            "number": "1", 
+            "position": "1", 
+            "recording": {
+              "id": "f7b8fdcf-d049-4b8f-aede-14e233950df2", 
+              "length": "125360", 
+              "tag-list": [
+                {
+                  "count": "2", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "art rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "4", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock & roll"
+                }
+              ], 
+              "title": "I Can\u2019t Explain"
+            }, 
+            "track_or_recording_length": "125360"
+          }, 
+          {
+            "id": "820a6785-c05f-3865-bb60-52f803d1e9d5", 
+            "length": "165533", 
+            "number": "2", 
+            "position": "2", 
+            "recording": {
+              "disambiguation": "US single version", 
+              "id": "632798b7-1603-4b35-a9c7-afe4fa692445", 
+              "length": "166000", 
+              "tag-list": [
+                {
+                  "count": "0", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "beat music"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 80 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "3", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "rock & roll"
+                }
+              ], 
+              "title": "The Kids Are Alright"
+            }, 
+            "track_or_recording_length": "165533"
+          }, 
+          {
+            "id": "c3e6ab2a-3128-3c44-b427-6547079c399d", 
+            "length": "132906", 
+            "number": "3", 
+            "position": "3", 
+            "recording": {
+              "id": "8a25cb86-620b-49a7-9058-10c683828fce", 
+              "length": "132906", 
+              "tag-list": [
+                {
+                  "count": "2", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "5", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock & roll"
+                }
+              ], 
+              "title": "Happy Jack"
+            }, 
+            "track_or_recording_length": "132906"
+          }, 
+          {
+            "id": "6f0bc96a-1578-3d88-958c-e9e355d2b1b3", 
+            "length": "246000", 
+            "number": "4", 
+            "position": "4", 
+            "recording": {
+              "id": "7812bd56-f4ce-4783-8a61-545a3ee40cfe", 
+              "length": "247333", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "british psychedelia"
+                }, 
+                {
+                  "count": "-1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "freakbeat"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "proto-punk"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "psychedelic pop"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "psychedelic rock"
+                }, 
+                {
+                  "count": "3", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "rock & roll"
+                }
+              ], 
+              "title": "I Can See for Miles"
+            }, 
+            "track_or_recording_length": "246000"
+          }, 
+          {
+            "id": "77346ded-7093-3e81-89f6-ffddb5b1eb3b", 
+            "length": "163426", 
+            "number": "5", 
+            "position": "5", 
+            "recording": {
+              "id": "58c1eecb-9ea0-4a1a-8ee7-22e829c628ac", 
+              "length": "164333", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "adult contemporary"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "art rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "freakbeat"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 80 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "psychedelic pop"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "psychedelic rock"
+                }, 
+                {
+                  "count": "4", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "rock & roll"
+                }
+              ], 
+              "title": "Pictures of Lily"
+            }, 
+            "track_or_recording_length": "163426"
+          }, 
+          {
+            "id": "cf29d7dc-14f5-3a70-a745-5d5be05b4166", 
+            "length": "198733", 
+            "number": "6", 
+            "position": "6", 
+            "recording": {
+              "disambiguation": "mono", 
+              "id": "9ce06d95-8de5-4560-b280-9aa5387d100a", 
+              "length": "198733", 
+              "tag-list": [
+                {
+                  "count": "2", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "british rhythm & blues"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "garage rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "my generation"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 80 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "proto-punk"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rhythm & blues"
+                }, 
+                {
+                  "count": "6", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock & roll"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "soundtrack"
+                }
+              ], 
+              "title": "My Generation"
+            }, 
+            "track_or_recording_length": "198733"
+          }, 
+          {
+            "id": "b3e760cb-0bea-35fd-983b-20dd7cea9409", 
+            "length": "191000", 
+            "number": "7", 
+            "position": "7", 
+            "recording": {
+              "id": "93a22134-9fa1-4e20-a82a-bb729a863414", 
+              "length": "192000", 
+              "tag-list": [
+                {
+                  "count": "2", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "3", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock & roll"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "top 40"
+                }
+              ], 
+              "title": "The Seeker"
+            }, 
+            "track_or_recording_length": "191000"
+          }, 
+          {
+            "id": "e2f50496-29ab-32f6-95f3-0afea6e73c71", 
+            "length": "162866", 
+            "number": "8", 
+            "position": "8", 
+            "recording": {
+              "disambiguation": "mono", 
+              "id": "5243a2aa-962b-4b5b-97ac-3eee3cda7637", 
+              "length": "161493", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "art rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "3", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock & roll"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "soul"
+                }
+              ], 
+              "title": "Anyway, Anyhow, Anywhere"
+            }, 
+            "track_or_recording_length": "162866"
+          }, 
+          {
+            "id": "3ee59695-2ced-31a0-8b99-6732d149080e", 
+            "length": "179800", 
+            "number": "9", 
+            "position": "9", 
+            "recording": {
+              "disambiguation": "original studio mix", 
+              "id": "295291be-e403-47fd-b7ab-ae65ad60a275", 
+              "length": "181626", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "art rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "3", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 80 s"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "6", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "rock & roll"
+                }
+              ], 
+              "title": "Pinball Wizard"
+            }, 
+            "track_or_recording_length": "179800"
+          }, 
+          {
+            "id": "d469ec7d-bc71-3650-9876-6eefbc045f2b", 
+            "length": "168333", 
+            "number": "10", 
+            "position": "10", 
+            "recording": {
+              "id": "d8512eeb-d3b7-44be-a8ac-98946dfe6152", 
+              "length": "168333", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock"
+                }
+              ], 
+              "title": "A Legal Matter"
+            }, 
+            "track_or_recording_length": "168333"
+          }, 
+          {
+            "id": "2aadc9ab-4efe-3087-a90d-9cf89c6c5f88", 
+            "length": "148000", 
+            "number": "11", 
+            "position": "11", 
+            "recording": {
+              "id": "b5f80bc5-e579-4945-bac5-ec8850908273", 
+              "length": "149000", 
+              "tag-list": [
+                {
+                  "count": "3", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "4", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock & roll"
+                }
+              ], 
+              "title": "Boris the Spider"
+            }, 
+            "track_or_recording_length": "148000"
+          }, 
+          {
+            "id": "532b7a5b-fcd0-3d5d-a9d3-00fb8c4cbc99", 
+            "length": "201000", 
+            "number": "12", 
+            "position": "12", 
+            "recording": {
+              "id": "946373a3-d4df-4f61-96c3-628dba1d9fb2", 
+              "length": "201000", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "oldies 70 s"
+                }
+              ], 
+              "title": "The Magic Bus"
+            }, 
+            "track_or_recording_length": "201000"
+          }, 
+          {
+            "id": "2844d250-a1a0-37a8-a0be-677247ca78a7", 
+            "length": "229173", 
+            "number": "13", 
+            "position": "13", 
+            "recording": {
+              "id": "7f1729bf-2683-41f4-ad80-f157a3eee2e8", 
+              "length": "228000", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "album rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "alternative rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "blue-eyed soul"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "british invasion"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "british rhythm & blues"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "classic rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "contemporary pop/rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "hard rock"
+                }, 
+                {
+                  "count": "2", 
+                  "name": "mod"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "pop rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "pop/rock"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rhythm & blues"
+                }, 
+                {
+                  "count": "5", 
+                  "name": "rock"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "rock & roll"
+                }, 
+                {
+                  "count": "0", 
+                  "name": "top 40"
+                }
+              ], 
+              "title": "Substitute"
+            }, 
+            "track_or_recording_length": "229173"
+          }, 
+          {
+            "id": "a9450fc6-7f76-3b69-8da3-1df3d0878330", 
+            "length": "221493", 
+            "number": "14", 
+            "position": "14", 
+            "recording": {
+              "id": "30ae89ca-dfe8-4a50-b3d2-61da0607754d", 
+              "length": "221493", 
+              "tag-list": [
+                {
+                  "count": "1", 
+                  "name": "oldies 70 s"
+                }, 
+                {
+                  "count": "1", 
+                  "name": "rock"
+                }
+              ], 
+              "title": "I\u2019m a Boy"
+            }, 
+            "track_or_recording_length": "221493"
+          }
+        ]
+      }
+    ], 
+    "packaging": "Jewel Case", 
+    "quality": "normal", 
+    "release-event-count": 1, 
+    "release-event-list": [
+      {
+        "area": {
+          "id": "489ce91b-6658-3307-9877-795b68554c98", 
+          "iso-3166-1-code-list": [
+            "US"
+          ], 
+          "name": "United States", 
+          "sort-name": "United States"
+        }, 
+        "date": "1998-06-16"
+      }
+    ], 
+    "status": "Official", 
+    "text-representation": {
+      "language": "eng", 
+      "script": "Latn"
+    }, 
+    "title": "Meaty Beaty Big and Bouncy"
+  }
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+cdparanoia -Q 2>&1 | grep '\.  ' | wc -l
+

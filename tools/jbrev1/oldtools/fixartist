@@ -1,0 +1,37 @@
+#!/usr/bin/perl
+#use strict;
+use DBI;
+
+$db = "music"; 
+$host = "localhost";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+# Try to find artist
+
+  # Fix tracks that point to wrong one.
+  $sql = "update track set artistid=$ARGV[1] where artistid=$ARGV[0]";
+  print "$sql\n";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+
+  # Fix albums that point to wrong one.
+  $sql = "update album set artistid=$ARGV[1] where artistid=$ARGV[0]";
+  print "$sql\n";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+
+  # Finally, delete wrong one.
+  $sql = "delete from artist where uid=$ARGV[0]";
+  print "$sql\n";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+
+
+
+

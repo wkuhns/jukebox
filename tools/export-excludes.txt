@@ -1,0 +1,17 @@
+backup
+bigbrother
+boot
+dvds
+hold
+import
+jukebox.mysql
+junk
+lost+found
+midi
+postgresql.tgz
+root
+sdc3.tgz
+sdc.img
+var
+vecs
+

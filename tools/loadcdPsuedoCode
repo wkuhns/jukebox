@@ -1,0 +1,59 @@
+read CD id
+read number of tracks
+make default track names
+
+If disc on musicbrainz
+  Get title from mbz
+  Get artist name from mbz
+  Get genre from mbz
+  Get coverart from mbz
+  Get track names from mbz
+  Flag 'have artist, title, genre, art'
+else if stub on mbz
+  Get title from mbz
+  Get artist name from mbz
+  Get whatever else from mbz (tracknames?)
+  Flag 'have title, artist, whatever else'
+
+
+If user specified cdtag
+  Get jukebox title / artist / genre using cdtag
+  Validate with user
+  Flag 'Album on jukebox'
+else
+  Is album on jukebox? (search by title and artist)
+    Validate with user
+    Flag 'Album on jukebox'
+
+if album is on jukebox
+  Flag 'have title, artist, genre'
+  Delete jukebox tracks
+else
+  if no mbz data
+    Get title from console
+    Get artist from console
+    Get genre from console
+  Create album on jukebox
+
+// Album exists on jukebox, but no tracks. We have either default or real track names
+
+Create target directory
+If we have art
+  Create cover.jpg
+
+For each track
+  Read data to file
+  Create track and listitem records
+
+
+CDTAG specified
+  mbz data, on jukebox - Verify, replace tracks
+  mbz data, not on jukebox - add album
+  no mbz data, on jukebox - Verify, replace tracks
+  no mbz data, not on jukebox - add album
+CDTAG not specified
+  mbz data, on jukebox - Verify, replace tracks
+  mbz data, not on jukebox - add album
+  no mbz data: Get title, artist
+    on jukebox - Verify, replace tracks
+    not on jukebox - add album

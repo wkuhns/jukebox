@@ -1,0 +1,223 @@
+#!/usr/bin/perl
+#use strict;
+
+# Rip cd. Add artist if needed. Create album record if needed. Create track and listitem records.
+# If cdtag is specified on command line don't create album record.
+
+use DBI;
+use CDDB_get qw( get_cddb );
+
+my %config;
+$config{CDDB_HOST}="freedb.freedb.org";        # set cddb host
+$config{CDDB_PORT}=8880;                       # set cddb port
+$config{CDDB_MODE}="cddb";                     # set cddb mode: cddb or http
+$config{CD_DEVICE}="/dev/cdrom";               # set cd device
+
+# user interaction welcome?
+$config{input}=1;   # 0: ask user if more than one possibility
+my %cd=get_cddb(\%config);
+
+# If not in CDDB, ask user
+if(defined $cd{title}) {
+
+  # do something with the results
+
+  $artist = $cd{artist};
+  
+  $atitle = $cd{title};
+  $atitle =~ s/\(/\[/;
+  $atitle =~ s/\)/\]/;
+  $atitle =~ s/\"/\'/;
+  
+  $genre = $cd{cat};
+  $cddbid = $cd{id};
+  $trackno = $cd{tno};
+  
+  $genre = ucfirst($genre);
+  
+}else{
+  print "No CDDB entry found.\n";
+  print "CD Title? ";
+  $atitle = <>;
+
+  print "Artist? ";
+  $artist = <>;
+
+  $genre = "unknown";
+  $cddbid = 0;
+  $trackno = 0;
+
+}
+print "artist: $artist\n";
+print "title: $atitle\n";
+print "category: $genre\n";
+print "cddbid: $cddbid\n";
+print "trackno: $trackno\n";
+
+# die("bye bye");
+
+mkdir "/lmusic/upload";
+chdir "/lmusic/upload";
+
+
+
+#my $n=1;
+#foreach my $i ( @{$cd{track}} ) {
+#  print "track $n: $i\n";
+#  $n++;
+#}
+
+#open(cdfile,"audio.cddb") || die "Could not open audio.cddb\n";
+
+#while(<cdfile>){
+# if (/DTITLE=/) {
+#   $tline = $';
+#   print "$tline\n";
+#   ($artist,$title) = split(/\//,$tline);
+#   chomp($artist);
+#   $title =~ s/^ |\t|\n//;
+# }
+#}
+
+system "cdda2wav -Bgsx dev=/dev/cdrom";
+#system "cdda2wav -Bgsx dev=/dev/hdc";
+
+$db = "music";
+$host = "localhost";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+# Try to find artist
+
+$sql = "SELECT uid FROM artist where dispname=\"$artist\"";
+
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+# We should have exactly 1 or no matches. Failing rows_affected,
+# we read and count the matches.
+$n=0;
+while ($row = $sth->fetchrow_hashref)
+{
+  #print $row->{'uid'},'<BR>';
+  $artistid = $row->{'uid'};
+  $n++;
+}
+
+# If we found a match, we're happy. Otherwise, insert artist into DB
+if ($n){
+  print "Found artist: $artistid $artist\n";
+} else {
+  $sql = "INSERT INTO artist (dispname) values ('$artist')";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+  $artistid = $sth->{'mysql_insertid'};
+  print "Inserted artist: $artistid\n";
+}
+
+# Look for album
+# If we have command line arg, then look for that album
+# If not, we try to match title and artist
+if ($ARGV[0]){
+  $cdtag = uc($ARGV[0]);
+  $sql = "SELECT uid FROM album WHERE cdtag='$cdtag'";
+}else{
+  $sql = "SELECT uid FROM album WHERE (artistid=$artistid AND title=\"$atitle\")";
+}
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+# We should have exactly 1 or no matches. Failing rows_affected,
+# we read and count the matches.
+$n=0;
+while ($row = $sth->fetchrow_hashref)
+{
+  #print $row->{'uid'},'<BR>';
+  $albumid = $row->{'uid'};
+  $n++;
+}
+
+# If we found a match, we're happy. Otherwise, insert album into DB
+# Worthless cddb_get doesn't get release year.....
+if ($n){
+  print "Found album: $albumid $a\n";
+  $sql = "UPDATE album set cddbid='$cddbid', source='cd', jukebox=-1 where uid=$albumid";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+  print "Updated album: $albumid\n";
+} else {
+  $sql = "INSERT INTO album (title,genre,artistid,composerid,cddbid,cdflag,source,prisource,cdtag,cdslot,jukebox,albumflag,bgenre) values (\"$atitle\", '$genre', $artistid, 0, '$cddbid', -1, 'cd', -1, 'xxx', 0, -1, 0, 1073741824)";
+  $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+  $sth->execute or die "executing: ", $dbh->errstr;
+  $albumid = $sth->{'mysql_insertid'};
+  print "Inserted album: $albumid\n";
+}
+
+# Set cdtag
+$cdtag = chr($albumid % 26+65) . chr(int($albumid/676)+66) . chr(int(($albumid % 676)/26)+65);
+$sql = "UPDATE album SET cdtag='$cdtag' WHERE uid=$albumid";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+# Write track and listitem records
+$cdtag = lc($cdtag);
+$f = sprintf("%02d",$n);
+
+# If we have CDDB....
+if(defined $cd{title}) {
+
+  my $n=1;
+  foreach my $i ( @{$cd{track}} ) {
+    $f = sprintf("%02d",$n);
+    $t=$i;
+    $t =~ s/\"/\'/;
+    $t =~ s/\"/\'/;
+  
+    $sql = "INSERT INTO track (artistid,title,url,genre,source,seq,rating) values ($artistid,\"$t\",'\/music\/$cdtag\/audio_$f.wav','$genre','cd',$n,3)";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+    $trackid = $sth->{'mysql_insertid'};
+    $sql = "INSERT INTO listitem (trackid,albumid,seq) values ($trackid,$albumid,$n)";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+  
+    #print "$sql\n";
+    print "track $n: $i\n";
+    $n++;
+  }
+}else{
+  # no CDDB: use track #
+  opendir $dh,"/music/upload";
+  #print readdir $dh;
+  $n=0;
+  foreach $i (readdir $dh) {
+    ($a,$b) = split(/\./, $i);
+    if ($b eq "wav") {
+      print "$n: $a; $b= $i\n";
+      $n++;
+      $sql = "INSERT INTO track (artistid,title,url,genre,source,seq,rating) values ($artistid,'Track $n','\/music\/$cdtag\/$i','$genre','cd',$n,3)";
+    #print "$sql\n";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+    $trackid = $sth->{'mysql_insertid'};
+    $sql = "INSERT INTO listitem (trackid,albumid,seq) values ($trackid,$albumid,$n)";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+  
+    #print "$sql\n";
+    print "track $n: $i\n";
+    }
+  }
+}
+
+rename "/lmusic/upload", "/lmusic/$cdtag";
+system "ln -s /lmusic/$cdtag /music";
+
+print "\nAll Done: Created directory $cdtag\n";
+
+

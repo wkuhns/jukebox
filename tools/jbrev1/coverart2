@@ -1,0 +1,89 @@
+#!/bin/bash
+#
+# pbrisbin 2009
+#
+# http://pbrisbin.com:8080/bin/coverart
+#
+# NOTE: always use absolute paths
+#       i.e. use $HOME/ not ~/
+#
+# dependencies:
+#       curl
+#       audiotag (+atomicparsley for m4a support)
+#
+#
+# once ~/.covers is filled, you could use ./bin/conkycovers to
+# automagically display them in conky as they play in mpd
+#
+###
+
+logger() { echo "$(date +'[ %d %b %Y %H:%M ]') :: $*" | tee -a "$log"; }
+
+read_tag() {
+  tag="$(audiotag -l "$1" | grep -io " ALBUM:.*\| ARTIST:.*" |\
+         sort -r |\
+         awk -F ':' '{print $2}' |\
+         xargs -d '\n' |\
+         grep "[0-9a-zA-Z]" |\
+         sed -s 's/^\ //g;s/\ \ /\ /g')"
+
+  # slashes cause issues
+  echo ${tag//\//_}
+}
+
+
+fetch_cover () {
+  #local IFS=$'\n'
+  #cat nocover.txt | \
+  #while read cdtag; do
+  album=`echo "select concat(replace(artist.dispname,'&','and'),' ',album.title) from album,artist where album.artistid=artist.uid and album.cdtag='$cdtag'" | mysql -sN -u wkuhns music`
+
+  echo "$cdtag: $album"
+
+    # do we have a valid album name
+    if [ -n "$album" ]; then
+      file="/music/"$cdtag"/cover.jpg"
+      # have we not fetched this already
+      if [ ! -e "$file" ] ; then
+        url="http://www.albumart.org/index.php?srchkey=${album// /+}&itempage=1&newsearch=1&searchindex=Music"
+	#echo "$url"        
+        cover_url=$(curl -s "$url" | awk -F 'src=' '/zoom-icon.jpg/ {print $2}' | cut -d "'" -f 2 | head -n1)
+
+	echo "$cover_url"        
+
+        # is it available
+       if [ -n "$cover_url" ]; then
+          wget -q -O "$file" "$cover_url" && \
+            (logger 'cover retrieved'; chown www-data:webusers $file; chmod g+w $file; \
+             echo "update album set cover = 'Y' where cdtag='$cdtag'" | mysql -u wkuhns music ) || \
+            ( logger 'cover NOT retrieved'; rm $file )
+        fi
+      else
+        echo "$file exists"
+      fi
+    else
+      echo "$album not valid"
+    fi
+  #done
+}
+
+# define constants
+mdir="/music/$1"       # where be music
+cdir="/music/covers"     # where put covers 
+list="/music/tools/listing.txt" # log of what we do, to prevent duplicate work
+covr='cover.jpg'         # filename use for symlinked covers, i.e. some apps might want front.jpg instead
+cdtag="$1"
+
+log="/music/tools/coverart.log"
+
+# 1. find and query your music tags to build a list
+#    format: "/path/to/album/some_track.mp3|Artist Album"
+#create_list
+
+# 2. fetch cover art based on this list
+#    stored as: ~/.covers/Artist_Album.jpg
+fetch_cover 
+
+# 3. symlink those covers appropriately
+#    example: ~/Music/.../album/cover.jpg --> ~/.covers/Artist_Album.jpg
+#link_them

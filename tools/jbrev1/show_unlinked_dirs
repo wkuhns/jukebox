@@ -1,0 +1,41 @@
+#!/usr/bin/perl
+#use strict;
+
+# Look through directories on /music and see which ones don't match an album record.
+# Delete them (commented out). Won't delete dirs that aren't empty.
+
+use DBI;
+
+$db = "music";
+$host = "localhost";
+$user = "wkuhns";
+$pwd = "";
+$albumid=4000;
+$artistid=14;
+$genre="unknown";
+$cdtag=@ARGV[0];
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+  opendir $dh,"/music";
+  #print readdir $dh;
+  $n=0;
+  foreach $i (readdir $dh) {
+    ($a,$b) = split(/\./, $i);
+    #print "$n: $a; $b= $i\n";
+    if ($i ne '.' && $i ne '..') {
+      $n++;
+      $sql = "SELECT uid from album where cdtag='$a' ";
+      #print "$sql\n";
+      $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+      $sth->execute or die "executing: ", $dbh->errstr;
+      if ($sth->rows == 0) {
+        print "No album for directory $i \n";
+        #rmdir "/music/$i";
+      }
+    }
+  }
+

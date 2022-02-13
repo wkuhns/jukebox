@@ -1,0 +1,1219 @@
+{
+  "disc": {
+    "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+    "offset-count": 2, 
+    "offset-list": [
+      150, 
+      18645
+    ], 
+    "release-count": 11, 
+    "release-list": [
+      {
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1998", 
+        "id": "9b48ce52-3354-43b4-94a2-d71c75353520", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1998"
+          }
+        ], 
+        "status": "Promotion", 
+        "text-representation": {
+          "language": "nld", 
+          "script": "Latn"
+        }, 
+        "title": "Contract"
+      }, 
+      {
+        "barcode": "8712944083774", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1997", 
+        "id": "9fbe550b-f98b-496d-88e8-0d9f45813ac9", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1997"
+          }
+        ], 
+        "status": "Official", 
+        "text-representation": {
+          "language": "nld", 
+          "script": "Latn"
+        }, 
+        "title": "Da Jonguh"
+      }, 
+      {
+        "barcode": "8712705038258", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1998", 
+        "id": "6433ccd9-d814-4c74-b51d-2ca38fa5e1bb", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1998"
+          }
+        ], 
+        "status": "Official", 
+        "text-representation": {
+          "language": "nld", 
+          "script": "Latn"
+        }, 
+        "title": "HOEST"
+      }, 
+      {
+        "barcode": "724389452327", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1997", 
+        "id": "6f55b84c-6e58-4111-ba91-fb485f5c7ca4", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1997"
+          }
+        ], 
+        "status": "Official", 
+        "text-representation": {
+          "language": "eng", 
+          "script": "Latn"
+        }, 
+        "title": "Congo"
+      }, 
+      {
+        "barcode": "8712195732124", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1996", 
+        "id": "95d33f06-b356-44ae-b290-0a7819e028c1", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1996"
+          }
+        ], 
+        "status": "Promotion", 
+        "text-representation": {
+          "language": "nld", 
+          "script": "Latn"
+        }, 
+        "title": "Godver godver"
+      }, 
+      {
+        "barcode": "042285543223", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1994", 
+        "id": "30ac9626-4dac-457c-88be-11d0b7d2f5a4", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1994"
+          }
+        ], 
+        "status": "Official", 
+        "text-representation": {
+          "language": "nld", 
+          "script": "Latn"
+        }, 
+        "title": "Praat geen poep"
+      }, 
+      {
+        "barcode": "8711211961623", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1996", 
+        "id": "31f77e60-ad1b-4d06-bf15-813a0efcf5ab", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1996"
+          }
+        ], 
+        "status": "Official", 
+        "text-representation": {
+          "language": "nld", 
+          "script": "Latn"
+        }, 
+        "title": "Sex met die blonde"
+      }, 
+      {
+        "asin": "B003BMES70", 
+        "barcode": "5012394525521", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "true", 
+          "back": "false", 
+          "count": "1", 
+          "front": "true"
+        }, 
+        "date": "1991", 
+        "id": "b4f38dad-faed-41f4-9e15-c78383ed42de", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1991"
+          }
+        ], 
+        "status": "Official", 
+        "text-representation": {
+          "language": "eng", 
+          "script": "Latn"
+        }, 
+        "title": "Eye of Heaven"
+      }, 
+      {
+        "barcode": "724388655521", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1999", 
+        "id": "5424c204-d61b-4941-ab9a-9305b9b6ff1e", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1999"
+          }
+        ], 
+        "status": "Promotion", 
+        "text-representation": {
+          "language": "nld", 
+          "script": "Latn"
+        }, 
+        "title": "Koningin van de zigeuners (La Mama)"
+      }, 
+      {
+        "barcode": "743212118322", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1994", 
+        "id": "62d472eb-f875-478e-8ee0-4715813357aa", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1994"
+          }
+        ], 
+        "status": "Official", 
+        "text-representation": {
+          "language": "eng", 
+          "script": "Latn"
+        }, 
+        "title": "Back to the Shore"
+      }, 
+      {
+        "barcode": "5099766554815", 
+        "country": "NL", 
+        "cover-art-archive": {
+          "artwork": "false", 
+          "back": "false", 
+          "count": "0", 
+          "front": "false"
+        }, 
+        "date": "1998", 
+        "id": "b13fde0c-b3a6-4aae-a6aa-20f07ff29265", 
+        "medium-count": 1, 
+        "medium-list": [
+          {
+            "disc-count": 1, 
+            "disc-list": [
+              {
+                "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+                "offset-count": 2, 
+                "offset-list": [
+                  150, 
+                  18645
+                ], 
+                "sectors": "37890"
+              }
+            ], 
+            "format": "CD", 
+            "position": "1", 
+            "track-count": 2, 
+            "track-list": []
+          }
+        ], 
+        "quality": "normal", 
+        "release-event-count": 1, 
+        "release-event-list": [
+          {
+            "area": {
+              "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+              "iso-3166-1-code-list": [
+                "NL"
+              ], 
+              "name": "Netherlands", 
+              "sort-name": "Netherlands"
+            }, 
+            "date": "1998"
+          }
+        ], 
+        "status": "Promotion", 
+        "text-representation": {
+          "language": "eng", 
+          "script": "Latn"
+        }, 
+        "title": "Three Sisters"
+      }
+    ], 
+    "sectors": "37890"
+  }
+}
+Title: ContractID: 9b48ce52-3354-43b4-94a2-d71c75353520
+{
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1998", 
+  "id": "9b48ce52-3354-43b4-94a2-d71c75353520", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1998"
+    }
+  ], 
+  "status": "Promotion", 
+  "text-representation": {
+    "language": "nld", 
+    "script": "Latn"
+  }, 
+  "title": "Contract"
+}
+Title: Da JonguhID: 9fbe550b-f98b-496d-88e8-0d9f45813ac9
+{
+  "barcode": "8712944083774", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1997", 
+  "id": "9fbe550b-f98b-496d-88e8-0d9f45813ac9", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1997"
+    }
+  ], 
+  "status": "Official", 
+  "text-representation": {
+    "language": "nld", 
+    "script": "Latn"
+  }, 
+  "title": "Da Jonguh"
+}
+Title: HOESTID: 6433ccd9-d814-4c74-b51d-2ca38fa5e1bb
+{
+  "barcode": "8712705038258", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1998", 
+  "id": "6433ccd9-d814-4c74-b51d-2ca38fa5e1bb", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1998"
+    }
+  ], 
+  "status": "Official", 
+  "text-representation": {
+    "language": "nld", 
+    "script": "Latn"
+  }, 
+  "title": "HOEST"
+}
+Title: CongoID: 6f55b84c-6e58-4111-ba91-fb485f5c7ca4
+{
+  "barcode": "724389452327", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1997", 
+  "id": "6f55b84c-6e58-4111-ba91-fb485f5c7ca4", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1997"
+    }
+  ], 
+  "status": "Official", 
+  "text-representation": {
+    "language": "eng", 
+    "script": "Latn"
+  }, 
+  "title": "Congo"
+}
+Title: Godver godverID: 95d33f06-b356-44ae-b290-0a7819e028c1
+{
+  "barcode": "8712195732124", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1996", 
+  "id": "95d33f06-b356-44ae-b290-0a7819e028c1", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1996"
+    }
+  ], 
+  "status": "Promotion", 
+  "text-representation": {
+    "language": "nld", 
+    "script": "Latn"
+  }, 
+  "title": "Godver godver"
+}
+Title: Praat geen poepID: 30ac9626-4dac-457c-88be-11d0b7d2f5a4
+{
+  "barcode": "042285543223", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1994", 
+  "id": "30ac9626-4dac-457c-88be-11d0b7d2f5a4", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1994"
+    }
+  ], 
+  "status": "Official", 
+  "text-representation": {
+    "language": "nld", 
+    "script": "Latn"
+  }, 
+  "title": "Praat geen poep"
+}
+Title: Sex met die blondeID: 31f77e60-ad1b-4d06-bf15-813a0efcf5ab
+{
+  "barcode": "8711211961623", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1996", 
+  "id": "31f77e60-ad1b-4d06-bf15-813a0efcf5ab", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1996"
+    }
+  ], 
+  "status": "Official", 
+  "text-representation": {
+    "language": "nld", 
+    "script": "Latn"
+  }, 
+  "title": "Sex met die blonde"
+}
+Title: Eye of HeavenID: b4f38dad-faed-41f4-9e15-c78383ed42de
+{
+  "asin": "B003BMES70", 
+  "barcode": "5012394525521", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "true", 
+    "back": "false", 
+    "count": "1", 
+    "front": "true"
+  }, 
+  "date": "1991", 
+  "id": "b4f38dad-faed-41f4-9e15-c78383ed42de", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1991"
+    }
+  ], 
+  "status": "Official", 
+  "text-representation": {
+    "language": "eng", 
+    "script": "Latn"
+  }, 
+  "title": "Eye of Heaven"
+}
+Title: Koningin van de zigeuners (La Mama)ID: 5424c204-d61b-4941-ab9a-9305b9b6ff1e
+{
+  "barcode": "724388655521", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1999", 
+  "id": "5424c204-d61b-4941-ab9a-9305b9b6ff1e", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1999"
+    }
+  ], 
+  "status": "Promotion", 
+  "text-representation": {
+    "language": "nld", 
+    "script": "Latn"
+  }, 
+  "title": "Koningin van de zigeuners (La Mama)"
+}
+Title: Back to the ShoreID: 62d472eb-f875-478e-8ee0-4715813357aa
+{
+  "barcode": "743212118322", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1994", 
+  "id": "62d472eb-f875-478e-8ee0-4715813357aa", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1994"
+    }
+  ], 
+  "status": "Official", 
+  "text-representation": {
+    "language": "eng", 
+    "script": "Latn"
+  }, 
+  "title": "Back to the Shore"
+}
+Title: Three SistersID: b13fde0c-b3a6-4aae-a6aa-20f07ff29265
+{
+  "barcode": "5099766554815", 
+  "country": "NL", 
+  "cover-art-archive": {
+    "artwork": "false", 
+    "back": "false", 
+    "count": "0", 
+    "front": "false"
+  }, 
+  "date": "1998", 
+  "id": "b13fde0c-b3a6-4aae-a6aa-20f07ff29265", 
+  "medium-count": 1, 
+  "medium-list": [
+    {
+      "disc-count": 1, 
+      "disc-list": [
+        {
+          "id": "lwHl8fGzJyLXQR33ug60E8jhf4k-", 
+          "offset-count": 2, 
+          "offset-list": [
+            150, 
+            18645
+          ], 
+          "sectors": "37890"
+        }
+      ], 
+      "format": "CD", 
+      "position": "1", 
+      "track-count": 2, 
+      "track-list": []
+    }
+  ], 
+  "quality": "normal", 
+  "release-event-count": 1, 
+  "release-event-list": [
+    {
+      "area": {
+        "id": "ef1b7cc0-cd26-36f4-8ea0-04d9623786c7", 
+        "iso-3166-1-code-list": [
+          "NL"
+        ], 
+        "name": "Netherlands", 
+        "sort-name": "Netherlands"
+      }, 
+      "date": "1998"
+    }
+  ], 
+  "status": "Promotion", 
+  "text-representation": {
+    "language": "eng", 
+    "script": "Latn"
+  }, 
+  "title": "Three Sisters"
+}
+9b48ce52-3354-43b4-94a2-d71c75353520
+TITLE=	Contract
+ARTIST=	Arthur Umbgrove
+YEAR=	1998
+GENRE1=	Rock
+GENRE2=	Rock

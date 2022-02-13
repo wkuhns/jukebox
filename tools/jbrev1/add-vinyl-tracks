@@ -1,0 +1,91 @@
+#!/usr/bin/perl
+#use strict;
+# Make track and listitem records for album where cddb data is not available (vinyl, for instance)
+# cdtag value must be supplied on command line.
+# /music/<cdtag> must exist, and audio_xx.wav files must be in directory.
+
+use DBI;
+
+unless ($ARGV[0]){
+  die "Must specify CD tag on command line\n";
+}
+
+
+$db = "music"; 
+$host = "copper.cld.home";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database. 
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+# Try to find artist
+
+$cdtag = uc($ARGV[0]);
+$sql = "SELECT uid,artistid,genre FROM album WHERE cdtag='$cdtag'";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+
+$n=0;
+while ($row = $sth->fetchrow_hashref)
+  {
+    #print $row->{'uid'},'<BR>';
+    $albumid = $row->{'uid'};
+    $artistid = $row->{'artistid'};
+    $genre = $row->{'genre'};
+    $n++;
+  }
+
+if ($n){
+  print "Found album: $albumid $a\n";
+} else {
+  die "No album";
+}
+
+# Write track and listitem records
+$cdtag = lc($cdtag);
+$f = sprintf("%02d",$n);
+$uid = 33;
+$gid=300;
+$dmode = 0774;
+$fmode = 0664;
+
+opendir $dh,"/music/$ARGV[0]";
+chown ($uid, $gid,"/music/$ARGV[0]");
+chmod ($dmode,"/music/$ARGV[0]");
+
+my(@filenames)=readdir $dh; 
+closedir $dh;
+@filenames=sort {$a cmp $b} @filenames;
+
+#print readdir $dh;
+$n=0;
+foreach $i (@filenames) {
+  ($a,$b) = split(/\./, $i);
+  if ($b eq "wav") {
+    print "$n: $a; $b= $i\n";
+    $n++;
+    $sql = "INSERT INTO track (artistid,title,url,genre,source,seq,rating,wav,mp3,pscore,volume) values ($artistid,'Track $n','\/music\/$cdtag\/$i','$genre','album',$n,70,1,0,120,0.95)";
+    print "$sql\n";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+    $trackid = $sth->{'mysql_insertid'};
+    $sql = "INSERT INTO listitem (trackid,albumid,seq) values ($trackid,$albumid,$n)";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+    chown ($uid, $gid, "/music/$cdtag/$i");
+    chmod ($fmode, "/music/$cdtag/$i");
+    #print "$sql\n";
+    print "track $n: $i\n";
+  }
+}
+
+$sql = "update album set jukebox=-1 where cdtag = '$cdtag'";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+    
+print "\nAll Done with $cdtag - created $n tracks\n";
+
+

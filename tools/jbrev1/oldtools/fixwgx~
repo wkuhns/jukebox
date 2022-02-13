@@ -1,0 +1,45 @@
+#!/usr/bin/perl
+#use strict;
+
+# Rip cd. Add artist if needed. Create album record if needed. Create track and listitem records.
+# If cdtag is specified on command line don't create album record.
+
+use DBI;
+
+$db = "music";
+$host = "localhost";
+$user = "wkuhns";
+$pwd = "";
+$albumid=4000;
+$artistid=14;
+$genre="unknown";
+$cdtag="wgx";
+
+# connect to the database.
+
+$dbh = DBI->connect( "DBI:mysql:$db:$host", $user, $pwd)
+or die "Connecting : $DBI::errstr\n ";
+
+  # no CDDB: use track #
+  opendir $dh,"/music/wgx";
+  #print readdir $dh;
+  $n=0;
+  foreach $i (readdir $dh) {
+    ($a,$b) = split(/\./, $i);
+    if ($b eq "wav") {
+      print "$n: $a; $b= $i\n";
+      $n++;
+      $sql = "INSERT INTO track (artistid,title,url,genre,source,seq,rating) values ($artistid,'Track $n','\/music\/$cdtag\/$i','$genre','cd',$n,3)";
+    #print "$sql\n";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+    $trackid = $sth->{'mysql_insertid'};
+    $sql = "INSERT INTO listitem (trackid,albumid,seq) values ($trackid,$albumid,$n)";
+    $sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+    $sth->execute or die "executing: ", $dbh->errstr;
+  
+    #print "$sql\n";
+    print "track $n: $i\n";
+    }
+  }
+

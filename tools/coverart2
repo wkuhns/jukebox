@@ -1,0 +1,63 @@
+#!/bin/bash
+#
+# pbrisbin 2009
+#
+# http://pbrisbin.com:8080/bin/coverart
+#
+# NOTE: always use absolute paths
+#       i.e. use $HOME/ not ~/
+#
+# dependencies:
+#       curl
+#       audiotag (+atomicparsley for m4a support)
+#
+
+fetch_cover () {
+  #local IFS=$'\n'
+  #cat nocover.txt | \
+  #while read cdtag; do
+  artist=`echo "select replace(artist.dispname,'&','and') from album,artistlink,artist where album.uid=artistlink.albumid and artistlink.artistid=artist.uid and album.cdtag='$cdtag'" | mysql -sN -u wkuhns jukebox`
+  album=`echo "select album.title from album,artistlink,artist where album.uid=artistlink.albumid and artistlink.artistid=artist.uid and album.cdtag='$cdtag'" | mysql -sN -u wkuhns jukebox`
+  file=`echo "select concat('/music/',lower(left(cdtag,1)),'/',lower(substr(cdtag,2,1)),'/',lower(substr(cdtag,3,1)),'/cover.jpg') from album where cdtag='$cdtag'" | mysql -sN -u wkuhns jukebox`
+  
+ echo "$cdtag: $album by $artist at $file: "
+  
+    # do we have a valid album name
+    if [ -n "$album" ]; then
+      # have we not fetched this already
+      if [ ! -e "$file" ] ; then
+        glyrc cover --artist "$artist" --album "$album" -w $file
+      fi
+      if [ -e "$file" ] ; then
+        echo "update album set status = status | 16 where cdtag='$cdtag'" | mysql -u wkuhns jukebox
+        echo "Success"
+      else
+        echo "update album set coverfail=1 where cdtag='$cdtag'" | mysql -u wkuhns jukebox
+        echo "No cover found"
+      fi
+    else
+      echo "$album not valid"
+    fi
+  #done
+}
+
+# define constants
+mdir="/music/$1"       # where be music
+cdir="/music/covers"     # where put covers 
+list="/music/tools/listing.txt" # log of what we do, to prevent duplicate work
+covr='cover.jpg'         # filename use for symlinked covers, i.e. some apps might want front.jpg instead
+cdtag="$1"
+
+log="/music/tools/coverart.log"
+
+# 1. find and query your music tags to build a list
+#    format: "/path/to/album/some_track.mp3|Artist Album"
+#create_list
+
+# 2. fetch cover art based on this list
+#    stored as: ~/.covers/Artist_Album.jpg
+fetch_cover 
+
+# 3. symlink those covers appropriately
+#    example: ~/Music/.../album/cover.jpg --> ~/.covers/Artist_Album.jpg
+#link_them

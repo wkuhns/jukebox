@@ -1,0 +1,48 @@
+#!/usr/bin/perl
+#use strict;
+# Make track and listitem records for album where cddb data is not available (vinyl, for instance)
+# cdtag value must be supplied on command line.
+# /music/<cdtag> must exist, and audio_xx.wav files must be in directory.
+
+use DBI;
+
+unless ($ARGV[0]){
+  die "Must specify CD tag on command line\n";
+}
+
+
+$db = "music"; 
+$host = "copper";
+$user = "wkuhns";
+$pwd = "";
+
+# connect to the database. 
+
+
+opendir $dh,"/music/$ARGV[0]";
+
+my(@filenames)=readdir $dh; 
+closedir $dh;
+@filenames=sort {$a cmp $b} @filenames;
+
+
+#print readdir $dh;
+$n=0;
+foreach $i @filenames {
+  ($a,$b) = split(/\./, $i);
+  if ($b eq "wav") {
+    print "$n: $a; $b= $i\n";
+    $n++;
+  
+    #print "$sql\n";
+    print "track $n: $i\n";
+  }
+}
+
+$sql = "update album set jukebox=-1 where cdtag = '$cdtag'";
+$sth = $dbh->prepare($sql) or die "preparing: ",$dbh->errstr;
+$sth->execute or die "executing: ", $dbh->errstr;
+    
+print "\nAll Done with $cdtag - created $n tracks\n";
+
+
