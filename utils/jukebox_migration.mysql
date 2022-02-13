@@ -1,0 +1,415 @@
+
+use jukebox;
+
+--
+-- Table structure for table `artistlink`
+--
+
+DROP TABLE IF EXISTS `artistlink`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `artistlink` (
+  `uid` int(11) NOT NULL auto_increment,
+  `artistid` int(11) NOT NULL,
+  `albumid` int(11) NOT NULL,
+  `rank` int(11) NOT NULL default '1' COMMENT 'For sorting primary / secondary / composer',
+  PRIMARY KEY  (`uid`),
+  KEY `artistid` (`artistid`,`albumid`)
+) ENGINE=MyISAM AUTO_INCREMENT=8312 DEFAULT CHARSET=latin1 COMMENT='Links artists to albums';
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `bgenre`
+--
+
+DROP TABLE IF EXISTS `bgenre`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `bgenre` (
+  `uid` int(11) NOT NULL auto_increment,
+  `bmask` bigint(20) default NULL,
+  `gname` varchar(20) default NULL,
+  PRIMARY KEY  (`uid`),
+  KEY `bmask` (`bmask`)
+) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `ftype`
+--
+
+DROP TABLE IF EXISTS `ftype`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `ftype` (
+  `uid` int(11) NOT NULL auto_increment,
+  `mask` int(11) NOT NULL,
+  `ftypename` varchar(20) NOT NULL,
+  PRIMARY KEY  (`uid`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 COMMENT='Possible files associated with album';
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `genre`
+--
+
+DROP TABLE IF EXISTS `genre`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `genre` (
+  `uid` int(11) NOT NULL default '0',
+  `gname` varchar(30) NOT NULL default '"none"',
+  `rank` int(11) NOT NULL default '1' COMMENT 'Used to decide which values go in pulldowns',
+  PRIMARY KEY  (`uid`),
+  KEY `gname` (`gname`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+
+DROP TABLE IF EXISTS `mp3file`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `mp3file` (
+  `uid` int(11) NOT NULL auto_increment,
+  `status` int(11) NOT NULL default '0',
+  `file` varchar(255) default NULL,
+  `artist` varchar(100) default NULL,
+  `artistid` int(11) default NULL,
+  `album` varchar(100) default NULL,
+  `albumid` int(11) default NULL,
+  `rdate` int(11) default NULL,
+  `title` varchar(255) default NULL,
+  `genre` varchar(20) default NULL,
+  `track` int(11) default NULL,
+  `trackid` int(11) default NULL,
+  `bgenre` int(11) default NULL,
+  `duration` int(11) default NULL,
+  `bitrate` int(11) NOT NULL default '0',
+  `filesize` int(11) default NULL,
+  `seq` int(11) default NULL,
+  `rating` int(11) default NULL,
+  PRIMARY KEY  (`uid`),
+  KEY `artistid` (`artistid`),
+  KEY `title` (`title`),
+  KEY `file` (`file`),
+  KEY `trackid` (`trackid`),
+  KEY `albumid` (`albumid`),
+  KEY `filesize` (`filesize`)
+) ENGINE=MyISAM AUTO_INCREMENT=766791 DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `mp3genre`
+--
+
+DROP TABLE IF EXISTS `mp3genre`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `mp3genre` (
+  `mp3gid` int(11) NOT NULL default '0',
+  `jbgid1` int(11) default NULL,
+  `jbgid2` int(11) default NULL,
+  `jbmask1` int(11) default NULL,
+  `jbmask2` int(11) default NULL,
+  `jbmask3` int(11) default NULL,
+  `jbgenre` int(11) default NULL,
+  PRIMARY KEY  (`mp3gid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `mp3player`
+--
+
+DROP TABLE IF EXISTS `mp3player`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `mp3player` (
+  `uid` int(11) NOT NULL auto_increment,
+  `playerid` varchar(20) NOT NULL,
+  `playertrack` int(11) NOT NULL,
+  `url` varchar(80) NOT NULL,
+  `song` varchar(80) NOT NULL,
+  `artist` varchar(80) NOT NULL,
+  `album` varchar(80) NOT NULL,
+  `trackuid` int(11) default NULL,
+  PRIMARY KEY  (`uid`),
+  KEY `playerid` (`playerid`,`playertrack`,`url`,`song`,`artist`,`album`,`trackuid`)
+) ENGINE=MyISAM AUTO_INCREMENT=8147 DEFAULT CHARSET=latin1 COMMENT='Tracks from MP3 players';
+SET character_set_client = @saved_cs_client;
+
+--
+-- Table structure for table `stype`
+--
+
+DROP TABLE IF EXISTS `stype`;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+CREATE TABLE `stype` (
+  `uid` int(11) NOT NULL,
+  `mask` int(11) NOT NULL,
+  `sname` varchar(20) NOT NULL,
+  PRIMARY KEY  (`uid`),
+  KEY `mask` (`mask`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+SET character_set_client = @saved_cs_client;
+
+
+--
+-- Dumping data for table `mp3genre`
+--
+
+LOCK TABLES `mp3genre` WRITE;
+/*!40000 ALTER TABLE `mp3genre` DISABLE KEYS */;
+INSERT INTO `mp3genre` VALUES (0,23,14,524288,8192,1073741824,1074274304),(1,3,5,4,16,1073741824,1073741844),(2,10,NULL,512,0,1073741824,1073742336),(3,3,NULL,4,0,1073741824,1073741828),(4,3,22,4,262144,1073741824,1074003972),(5,23,NULL,524288,0,1073741824,1074266112),(6,23,NULL,524288,0,1073741824,1074266112),(7,23,NULL,524288,0,1073741824,1074266112),(8,2,NULL,2,0,1073741824,1073741826),(9,18,3,131072,4,1073741824,1073872900),(10,7,NULL,64,0,1073741824,1073741888),(11,5,3,16,4,1073741824,1073741844),(12,23,NULL,524288,0,1073741824,1074266112),(13,22,NULL,262144,0,1073741824,1074003968),(14,23,NULL,524288,0,1073741824,1074266112),(15,23,NULL,524288,0,1073741824,1074266112),(16,3,NULL,4,0,1073741824,1073741828),(17,3,NULL,4,0,1073741824,1073741828),(18,22,NULL,262144,0,1073741824,1074003968),(19,23,NULL,524288,0,1073741824,1074266112),(20,23,NULL,524288,0,1073741824,1074266112),(21,3,NULL,4,0,1073741824,1073741828),(22,3,18,4,131072,1073741824,1073872900),(23,23,NULL,524288,0,1073741824,1074266112),(24,11,NULL,1024,0,1073741824,1073742848),(25,22,NULL,262144,0,1073741824,1074003968),(26,23,NULL,524288,0,1073741824,1074266112),(27,23,NULL,524288,0,1073741824,1074266112),(28,14,NULL,8192,0,1073741824,1073750016),(29,2,23,2,524288,1073741824,1074266114),(30,3,NULL,4,0,1073741824,1073741828),(31,23,NULL,524288,0,1073741824,1074266112),(32,6,NULL,32,0,1073741824,1073741856),(33,13,NULL,4096,0,1073741824,1073745920),(34,18,3,131072,4,1073741824,1073872900),(35,23,NULL,524288,0,1073741824,1074266112),(36,23,NULL,524288,0,1073741824,1074266112),(37,23,NULL,524288,0,1073741824,1074266112),(38,23,14,524288,8192,1073741824,1074274304),(39,23,NULL,524288,0,1073741824,1074266112),(40,23,3,524288,4,1073741824,1074266116),(41,23,NULL,524288,0,1073741824,1074266112),(42,3,NULL,4,0,1073741824,1073741828),(43,23,NULL,524288,0,1073741824,1074266112),(44,23,NULL,524288,0,1073741824,1074266112),(46,22,13,262144,4096,1073741824,1074008064),(47,3,13,4,4096,1073741824,1073745924),(48,23,NULL,524288,0,1073741824,1074266112),(49,23,NULL,524288,0,1073741824,1074266112),(50,23,NULL,524288,0,1073741824,1074266112),(51,22,NULL,262144,0,1073741824,1074003968),(52,23,NULL,524288,0,1073741824,1074266112),(53,22,4,262144,8,1073741824,1074003976),(54,22,NULL,262144,0,1073741824,1074003968),(55,23,NULL,524288,0,1073741824,1074266112),(56,3,NULL,4,0,1073741824,1073741828),(57,9,NULL,256,0,1073741824,1073742080),(58,23,NULL,524288,0,1073741824,1074266112),(59,23,NULL,524288,0,1073741824,1074266112),(60,3,22,4,262144,1073741824,1074003972),(61,23,NULL,524288,0,1073741824,1074266112),(62,22,NULL,262144,0,1073741824,1074003968),(63,23,NULL,524288,0,1073741824,1074266112),(64,23,NULL,524288,0,1073741824,1074266112),(65,23,NULL,524288,0,1073741824,1074266112),(66,23,3,524288,4,1073741824,1074266116),(67,3,NULL,4,0,1073741824,1073741828),(68,23,NULL,524288,0,1073741824,1074266112),(69,12,NULL,2048,0,1073741824,1073743872),(70,23,NULL,524288,0,1073741824,1074266112),(71,23,NULL,524288,0,1073741824,1074266112),(72,23,NULL,524288,0,1073741824,1074266112),(73,18,NULL,131072,0,1073741824,1073872896),(74,18,2,131072,2,1073741824,1073872898),(75,23,NULL,524288,0,1073741824,1074266112),(76,23,NULL,524288,0,1073741824,1074266112),(77,12,NULL,2048,0,1073741824,1073743872),(78,3,NULL,4,0,1073741824,1073741828),(79,18,3,131072,4,1073741824,1073872900),(80,4,NULL,8,0,1073741824,1073741832),(81,3,4,4,8,1073741824,1073741836),(82,4,23,8,524288,1073741824,1074266120),(83,2,NULL,2,0,1073741824,1073741826),(84,23,NULL,524288,0,1073741824,1074266112),(85,23,2,524288,2,1073741824,1074266114),(86,23,NULL,524288,0,1073741824,1074266112),(87,23,NULL,524288,0,1073741824,1074266112),(88,8,NULL,128,0,1073741824,1073741952),(89,23,4,524288,8,1073741824,1074266120),(90,23,3,524288,4,1073741824,1074266116),(91,23,3,524288,4,1073741824,1074266116),(92,3,NULL,4,0,1073741824,1073741828),(93,3,NULL,4,0,1073741824,1073741828),(94,3,NULL,4,0,1073741824,1073741828),(95,3,17,4,65536,1073741824,1073807364),(96,23,13,524288,4096,1073741824,1074270208),(97,14,NULL,8192,0,1073741824,1073750016),(98,17,NULL,65536,0,1073741824,1073807360),(99,13,17,4096,65536,1073741824,1073811456),(100,9,NULL,256,0,1073741824,1073742080),(101,23,NULL,524288,0,1073741824,1074266112),(102,23,NULL,524288,0,1073741824,1074266112),(103,14,6,8192,32,1073741824,1073750048),(104,6,13,32,4096,1073741824,1073745952),(105,6,NULL,32,0,1073741824,1073741856),(106,6,NULL,32,0,1073741824,1073741856),(107,23,NULL,524288,0,1073741824,1074266112),(108,23,NULL,524288,0,1073741824,1074266112),(109,23,NULL,524288,0,1073741824,1074266112),(110,9,NULL,256,0,1073741824,1073742080),(111,3,NULL,4,0,1073741824,1073741828),(112,23,3,524288,4,1073741824,1074266116),(113,3,NULL,4,0,1073741824,1073741828),(114,23,NULL,524288,0,1073741824,1074266112),(115,23,NULL,524288,0,1073741824,1074266112),(116,23,NULL,524288,0,1073741824,1074266112),(117,23,NULL,524288,0,1073741824,1074266112),(118,23,NULL,524288,0,1073741824,1074266112),(119,23,NULL,524288,0,1073741824,1074266112),(120,14,NULL,8192,0,1073741824,1073750016),(121,3,NULL,4,0,1073741824,1073741828),(122,23,NULL,524288,0,1073741824,1074266112),(123,14,NULL,8192,0,1073741824,1073750016),(124,22,NULL,262144,0,1073741824,1074003968),(125,3,NULL,4,0,1073741824,1073741828),(126,23,NULL,524288,0,1073741824,1074266112),(127,23,NULL,524288,0,1073741824,1074266112),(128,23,3,524288,4,1073741824,1074266116),(129,18,3,131072,4,1073741824,1073872900),(130,23,NULL,524288,0,1073741824,1074266112),(131,23,NULL,524288,0,1073741824,1074266112),(132,22,NULL,262144,0,1073741824,1074003968),(133,23,NULL,524288,0,1073741824,1074266112),(134,23,NULL,524288,0,1073741824,1074266112),(135,23,NULL,524288,0,1073741824,1074266112),(136,23,NULL,524288,0,1073741824,1074266112),(137,18,3,131072,4,1073741824,1073872900),(138,18,3,131072,4,1073741824,1073872900),(139,23,NULL,524288,0,1073741824,1074266112),(140,23,NULL,524288,0,1073741824,1074266112),(141,23,3,524288,4,1073741824,1074266116),(142,23,NULL,524288,0,1073741824,1074266112),(143,3,NULL,4,0,1073741824,1073741828),(144,23,NULL,524288,0,1073741824,1074266112),(145,23,NULL,524288,0,1073741824,1074266112),(146,22,NULL,262144,0,1073741824,1074003968),(147,22,NULL,262144,0,1073741824,1074003968),(45,7,NULL,64,0,1073741824,1073741888);
+/*!40000 ALTER TABLE `mp3genre` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Dumping data for table `genre`
+--
+
+LOCK TABLES `genre` WRITE;
+/*!40000 ALTER TABLE `genre` DISABLE KEYS */;
+INSERT INTO `genre` VALUES (0,'Blues',2),(1,'Classic Rock',2),(2,'Country',1),(4,'Disco',4),(5,'Funk',2),(6,'Grunge',4),(7,'Hip-Hop',3),(8,'Jazz',1),(9,'Metal',4),(10,'New Age',1),(11,'Oldies',4),(12,'Other',2),(13,'Pop',1),(14,'R&B',2),(15,'Rap',2),(16,'Reggae',2),(17,'Rock',1),(18,'Techno',2),(19,'Industrial',3),(20,'Alternative',2),(21,'Ska',4),(22,'Death Metal',4),(23,'Pranks',4),(24,'Soundtrack',1),(25,'Euro-Techno',4),(26,'Ambient',3),(27,'Trip-Hop',4),(28,'Vocal',2),(29,'Jazz+Funk',4),(30,'Fusion',2),(31,'Trance',3),(32,'Classical',1),(33,'Instrumental',2),(34,'Acid',3),(35,'House',3),(36,'Game',4),(37,'Sound Clip',4),(38,'Gospel',1),(39,'Noise',4),(40,'AlternRock',4),(41,'Bass',4),(42,'Soul',4),(43,'Punk',3),(44,'Space',4),(45,'Meditative',4),(46,'Instrumental Pop',4),(47,'Instrumental Rock',4),(48,'Ethnic',1),(49,'Gothic',4),(50,'Darkwave',3),(51,'Techno-Industrial',4),(52,'Electronic',2),(53,'Pop-Folk',4),(54,'Eurodance',4),(55,'Dream',4),(56,'Southern Rock',4),(57,'Comedy',2),(58,'Cult',4),(59,'Gangsta',4),(60,'Top 40',4),(61,'Christian Rap',4),(62,'Pop/Funk',4),(63,'Jungle',4),(64,'Native American',4),(65,'Cabaret',4),(66,'New Wave',4),(67,'Psychadelic',4),(68,'Rave',4),(69,'Showtunes',4),(70,'Trailer',4),(71,'Lo-Fi',4),(72,'Tribal',4),(73,'Acid Punk',4),(74,'Acid Jazz',3),(75,'Polka',3),(76,'Retro',3),(77,'Musical',1),(78,'Rock & Roll',4),(79,'Hard Rock',4),(80,'Folk',1),(81,'Folk-Rock',4),(82,'National Folk',4),(83,'Swing',4),(84,'Fast Fusion',4),(85,'Bebop',4),(86,'Latin',3),(87,'Revival',4),(88,'Celtic',1),(89,'Bluegrass',4),(90,'Avantgarde',4),(91,'Gothic Rock',4),(92,'Progressive Rock',4),(93,'Psychedelic Rock',4),(94,'Symphonic Rock',4),(95,'Slow Rock',4),(96,'Big Band',2),(97,'Chorus',2),(98,'Easy Listening',2),(99,'Acoustic',4),(100,'Humor',2),(101,'Speech',4),(102,'Chanson',4),(103,'Opera',4),(104,'Chamber Music',4),(105,'Sonata',4),(106,'Symphony',4),(107,'Booty Bass',3),(108,'Primus',4),(109,'Porn Groove',4),(110,'Satire',3),(111,'Slow Jam',4),(112,'Club',4),(113,'Tango',4),(114,'Samba',3),(115,'Folklore',4),(116,'Ballad',4),(117,'Power Ballad',4),(118,'Rhythmic Soul',3),(119,'Freestyle',4),(120,'Duet',4),(121,'Punk Rock',4),(122,'Drum Solo',4),(123,'A capella',1),(124,'Euro-House',4),(125,'Dance Hall',4),(3,'Dance',4),(126,'Unfiled',1),(127,'Inspirational',1),(128,'Podcast',3),(129,'Christmas',1),(130,'Childrens',4);
+/*!40000 ALTER TABLE `genre` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+--
+-- Dumping data for table `bgenre`
+--
+
+LOCK TABLES `bgenre` WRITE;
+/*!40000 ALTER TABLE `bgenre` DISABLE KEYS */;
+INSERT INTO `bgenre` VALUES (1,1,'Christmas'),(2,2,'Jazz'),(3,4,'Rock'),(4,8,'Folk'),(5,16,'Sixties'),(6,32,'Classical'),(7,64,'New Age'),(8,128,'Celtic'),(9,256,'Humor'),(10,512,'Country'),(11,1024,'Soundtrack'),(12,2048,'Musical'),(13,4096,'Instrumental'),(14,8192,'Vocal'),(15,16384,'Female'),(16,32768,'Male'),(17,65536,'Soft'),(18,131072,'Hard'),(19,268435456,'CD'),(20,536870912,'Album'),(21,1073741824,'Jukebox'),(22,262144,'Pop'),(23,524288,'Unfiled'),(24,134217728,'Playlist'),(26,1048576,'hippity-hop'),(27,2097152,'Acapella'),(28,4194304,'World'),(29,8388608,'Elevator'),(30,16777216,'Gospel'),(31,33554432,'Inspirational'),(32,67108864,'Other'),(35,2147483648,'Podcasts'),(36,4294967296,'Electronic');
+/*!40000 ALTER TABLE `bgenre` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+--
+-- Dumping data for table `ftype`
+--
+
+LOCK TABLES `ftype` WRITE;
+/*!40000 ALTER TABLE `ftype` DISABLE KEYS */;
+INSERT INTO `ftype` VALUES (1,1,'wav'),(2,2,'mp3'),(3,4,'m4a');
+/*!40000 ALTER TABLE `ftype` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+--
+-- Dumping data for table `stype`
+--
+
+LOCK TABLES `stype` WRITE;
+/*!40000 ALTER TABLE `stype` DISABLE KEYS */;
+INSERT INTO `stype` VALUES (1,1,'Jukebox'),(2,2,'CD'),(9,256,'NewDirStyle'),(3,4,'Album'),(4,8,'Tape'),(5,16,'Cover'),(6,32,'All Tracks'),(7,64,'Full Fidelity'),(8,128,'Playlist');
+/*!40000 ALTER TABLE `stype` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+insert into artistlink select null,artistid,uid,1 from album;
+ALTER TABLE `album` ADD `status` INT NOT NULL DEFAULT '0' COMMENT 'bitmask for status values' AFTER `uid` ;
+ALTER TABLE `track` ADD `ftype` INT NOT NULL DEFAULT '0' COMMENT 'file type bitmask' AFTER `url` ;
+update album set status=1 where jukebox=-1;
+update album set status=status+2 where bgenre & 268435456 != 0;
+update album set status=status+4 where albumflag=-1;
+update album set status=status+8 where tnum is not null;
+update album set status=status+64 where source='cd';
+update album set status=status+128 where prisource != -1;
+
+
+
+ALTER TABLE `track` CHANGE `genre` `tgenre` VARCHAR( 20 ) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL; 
+#ALTER TABLE `track` DROP `mp3`;
+#ALTER TABLE `track` DROP `wav`;
+ALTER TABLE `track` ADD `genre1` INT NOT NULL DEFAULT '126' AFTER `ftype` , ADD `genre2` INT NULL AFTER `genre1` ;
+ALTER TABLE `album` ADD `genre1` INT NOT NULL DEFAULT '126' AFTER `tside` , ADD `genre2` INT NULL AFTER `genre1` ;
+update track set tgenre='New Age' where tgenre='newage';
+update track set tgenre='Other' where tgenre='misc';
+ALTER TABLE `artist` ADD `status` INT NOT NULL DEFAULT '0' COMMENT 'artist status bitmask';
+
+# Set genre based on text field in track record as first attempt
+update track,genre set track.genre1=genre.uid where track.tgenre=genre.gname;
+
+#### Set track genres
+
+# Save genre if primary is to become 'Christmas'
+update track set genre2=genre1 where (bgenre & 1) != 0 and genre1 != 126;
+update track set genre1=129 where ((bgenre & 1) = 1);
+
+# Jazz
+update track set genre2=genre1 where (bgenre & 2) != 0 and genre1 != 126 and genre1 != 8;
+update track set genre1=8 where ((bgenre & 2) = 2);
+
+# Rock
+update track set genre2=genre1 where (bgenre & 4) != 0 and genre1 != 126 and genre1 != 17;
+update track set genre1=17 where ((bgenre & 4) = 4);
+
+# Folk
+update track set genre2=genre1 where ((bgenre & 8) = 8) and genre1 != 126 and genre1 != 80;
+update track set genre1=80 where ((bgenre & 8) = 8);
+
+# Sixties
+update track set genre2=genre1 where ((bgenre & 16) !=0) and genre1 != 126 and genre1 != 17;
+update track set genre1=17,genre2=1 where ((bgenre & 16) = 16);
+
+# Classical
+update track set genre2=genre1 where ((bgenre & 32) = 32) and genre1 != 126 and genre1 != 32;
+update track set genre1=32 where ((bgenre & 32) = 32);
+
+# New Age
+update track set genre2=genre1 where ((bgenre & 64) = 64) and genre1 != 126 and genre1 != 10;
+update track set genre1=10 where ((bgenre & 64) = 64);
+
+# Celtic
+update track set genre2=genre1 where ((bgenre & 128) = 128) and genre1 != 126 and genre1 != 88;
+update track set genre1=88 where (bgenre & 128) != 0;
+
+# Humor
+update track set genre2=genre1 where (bgenre & 256) !=0 and genre1 != 126 and genre1 != 100;
+update track set genre1=100 where (bgenre & 256) != 0;
+
+# Country
+update track set genre2=genre1 where (bgenre & 512) !=0 and genre1 != 126 and genre1 != 2;
+update track set genre1=2 where (bgenre & 512) != 0;
+
+# Soundtrack
+update track set genre2=genre1 where (bgenre & 1024) !=0 and genre1 != 126 and genre1 != 24;
+update track set genre1=24 where (bgenre & 1024) != 0;
+
+# Musical
+update track set genre2=genre1 where (bgenre & 2048) !=0 and genre1 != 126 and genre1 != 77;
+update track set genre1=77 where (bgenre & 2048) != 0;
+
+# Instrumental - set as secondary unless unfiled primary
+update track set genre1=33 where (bgenre & 4096) !=0 and genre1 = 126;
+update track set genre2=33 where (bgenre & 4096) != 0 and genre1 != 126;
+
+# pop - set as secondary unless unfiled primary
+update track set genre1=13 where (bgenre & 262144) !=0 and genre1 = 126;
+update track set genre2=13 where (bgenre & 262144) != 0 and genre1 != 126;
+
+# rap & hip-hop
+update track set genre2=genre1 where (bgenre & 1048576) !=0 and genre1 != 126 and genre1 != 15;
+update track set genre1=15 where (bgenre & 1048576) != 0 and genre1 != 7;
+
+# A capella
+update track set genre2=genre1 where (bgenre & 2097152) !=0 and genre1 != 126 and genre1 != 123;
+update track set genre1=123 where (bgenre & 2097152) != 0;
+
+# world
+update track set genre2=genre1 where (bgenre & 4194304) !=0 and genre1 != 126 and genre1 != 48;
+update track set genre1=48 where (bgenre & 4194304) != 0;
+
+# Easy Listening
+update track set genre2=genre1 where (bgenre & 8388608) !=0 and genre1 != 126 and genre1 != 98;
+update track set genre1=98 where (bgenre & 8388608) != 0;
+
+# Gospel
+update track set genre2=genre1 where (bgenre & 16777216) !=0 and genre1 != 126 and genre1 != 38;
+update track set genre1=38 where (bgenre & 16777216) != 0;
+
+# Inspirational
+update track set genre2=genre1 where (bgenre & 33554432) !=0 and genre1 != 126 and genre1 != 127;
+update track set genre1=127 where (bgenre & 33554432) != 0;
+
+# Other
+update track set genre2=genre1 where (bgenre & 67108864) !=0 and genre1 != 126 and genre1 != 12;
+update track set genre1=12 where (bgenre & 67108864) != 0;
+
+#### Set album genres
+
+# Save genre if primary is to become 'Christmas'
+update album set genre2=genre1 where (bgenre & 1) != 0 and genre1 != 126;
+update album set genre1=129 where ((bgenre & 1) = 1);
+
+# Jazz
+update album set genre2=genre1 where (bgenre & 2) != 0 and genre1 != 126 and genre1 != 8;
+update album set genre1=8 where ((bgenre & 2) = 2);
+
+# Rock
+update album set genre2=genre1 where (bgenre & 4) != 0 and genre1 != 126 and genre1 != 17;
+update album set genre1=17 where ((bgenre & 4) = 4);
+
+# Folk
+update album set genre2=genre1 where ((bgenre & 8) = 8) and genre1 != 126 and genre1 != 80;
+update album set genre1=80 where ((bgenre & 8) = 8);
+
+# Sixties
+update album set genre2=genre1 where ((bgenre & 16) !=0) and genre1 != 126 and genre1 != 17;
+update album set genre1=17,genre2=1 where ((bgenre & 16) = 16);
+
+# Classical
+update album set genre2=genre1 where ((bgenre & 32) = 32) and genre1 != 126 and genre1 != 32;
+update album set genre1=32 where ((bgenre & 32) = 32);
+
+# New Age
+update album set genre2=genre1 where ((bgenre & 64) = 64) and genre1 != 126 and genre1 != 10;
+update album set genre1=10 where ((bgenre & 64) = 64);
+
+# Celtic
+update album set genre2=genre1 where ((bgenre & 128) = 128) and genre1 != 126 and genre1 != 88;
+update album set genre1=88 where (bgenre & 128) != 0;
+
+# Humor
+update album set genre2=genre1 where (bgenre & 256) !=0 and genre1 != 126 and genre1 != 100;
+update album set genre1=100 where (bgenre & 256) != 0;
+
+# Country
+update album set genre2=genre1 where (bgenre & 512) !=0 and genre1 != 126 and genre1 != 2;
+update album set genre1=2 where (bgenre & 512) != 0;
+
+# Soundtrack
+update album set genre2=genre1 where (bgenre & 1024) !=0 and genre1 != 126 and genre1 != 24;
+update album set genre1=24 where (bgenre & 1024) != 0;
+
+# Musical
+update album set genre2=genre1 where (bgenre & 2048) !=0 and genre1 != 126 and genre1 != 77;
+update album set genre1=77 where (bgenre & 2048) != 0;
+
+# Instrumental - set as secondary unless unfiled primary
+update album set genre1=33 where (bgenre & 4096) !=0 and genre1 = 126;
+update album set genre2=33 where (bgenre & 4096) != 0 and genre1 != 126;
+
+# pop - set as secondary unless unfiled primary
+update album set genre1=13 where (bgenre & 262144) !=0 and genre1 = 126;
+update album set genre2=13 where (bgenre & 262144) != 0 and genre1 != 126;
+
+# rap & hip-hop
+update album set genre2=genre1 where (bgenre & 1048576) !=0 and genre1 != 126 and genre1 != 15;
+update album set genre1=15 where (bgenre & 1048576) != 0 and genre1 != 7;
+
+# A capella
+update album set genre2=genre1 where (bgenre & 2097152) !=0 and genre1 != 126 and genre1 != 123;
+update album set genre1=123 where (bgenre & 2097152) != 0;
+
+# world
+update album set genre2=genre1 where (bgenre & 4194304) !=0 and genre1 != 126 and genre1 != 48;
+update album set genre1=48 where (bgenre & 4194304) != 0;
+
+# Easy Listening
+update album set genre2=genre1 where (bgenre & 8388608) !=0 and genre1 != 126 and genre1 != 98;
+update album set genre1=98 where (bgenre & 8388608) != 0;
+
+# Gospel
+update album set genre2=genre1 where (bgenre & 16777216) !=0 and genre1 != 126 and genre1 != 38;
+update album set genre1=38 where (bgenre & 16777216) != 0;
+
+# Inspirational
+update album set genre2=genre1 where (bgenre & 33554432) !=0 and genre1 != 126 and genre1 != 127;
+update album set genre1=127 where (bgenre & 33554432) != 0;
+
+# Other
+update album set genre2=genre1 where (bgenre & 67108864) !=0 and genre1 != 126 and genre1 != 12;
+update album set genre1=12 where (bgenre & 67108864) != 0;
+
+ALTER TABLE `track` ADD `bitrate` INT NOT NULL DEFAULT '0' AFTER `duration`;
+ALTER TABLE  `mp3file` ADD  `bitrate` INT NOT NULL DEFAULT  '0' AFTER  `duration`;
+
+ALTER TABLE  `album` ADD  `stitle` VARCHAR( 30 ) NOT NULL;
+ALTER TABLE  `album` ADD INDEX (  `stitle` );
+
+
+

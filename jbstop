@@ -1,0 +1,5 @@
+#!/bin/bash
+
+kill `ps aux | grep scripts/playlist | grep bin | head -1 | cut -c9-16` 2> /dev/null
+killall sox mplayer mpg123 play 2> /dev/null
+echo "-- No Music Playing --" > /tmp/np.txt

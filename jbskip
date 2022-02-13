@@ -1,0 +1,3 @@
+#!/bin/bash
+
+killall sox mplayer mpg123 play 2> /dev/null
